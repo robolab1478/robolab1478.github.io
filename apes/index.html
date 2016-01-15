@@ -68,7 +68,7 @@
 						<br>
 						<br>
 					</div>
-					<div class="parallax" id="ken-burns"><img src="hero1.jpeg" alt="Hot air baloons to symbolize the new level" /></div>
+					<div class="parallax" id="ken-burns"><img src="http://storiesbywilliams.files.wordpress.com/2013/03/solar12.jpg" alt="Hot air baloons to symbolize the new level" /></div>
 				</div>
 			</div>
 			<div class="section animated fadeInUp" id="intro">
@@ -124,47 +124,42 @@
 					<div class="col s12 m5 l5 right-align benefit-icon"><i class="material-icons large">live_help</i></div>
 				</div>
 			</div>
-			<div class="section center white-text valign" id="contact">
-				<div class="valign">
-					<p class="flow-text">So what are you waiting for?</p><a class="modal-trigger btn flow-text waves-effect waves-light -background" href="#request">GET YOUR WEBSITE NOW!</a>
-					<br/>
-					<br/>
-				</div>
-			</div>
 			<script type="text/javascript" defer>
-				$(".parallax").parallax();
-				var o = [
-				{
-					selector: '#benefit-1',
-					offset: 200,
-					callback: '$("#benefit-1").children().addClass("animated slideInRight").removeClass("hide");'
-				}, {
-					selector: '#benefit-2',
-					offset: 200,
-					callback: '$("#benefit-2").children().addClass("animated slideInLeft").removeClass("hide");'
-				}, {
-					selector: '#benefit-3',
-					offset: 200,
-					callback: '$("#benefit-3").children().addClass("animated slideInRight").removeClass("hide");'
-				}, {
-					selector: '#benefit-4',
-					offset: 200,
-					callback: '$("#benefit-4").children().addClass("animated slideInLeft").removeClass("hide");'
-				}, {
-					selector: '#benefit-5',
-					offset: 200,
-					callback: '$("#benefit-5").children().addClass("animated slideInRight").removeClass("hide");'
-				}, {
-					selector: '#benefit-6',
-					offset: 200,
-					callback: '$("#benefit-6").children().addClass("animated slideInLeft").removeClass("hide");'
-				}, {
-					selector: '#contact',
-					offset: 100,
-					callback: '$("#contact").children().addClass("animated rotateIn").delay(1000).removeClass("rotateIn").addClass("flash")'
-				}, ];
-				if ($(window).width() >= 922) Materialize.scrollFire(o);
-				else $('.section .row').removeClass('hide').addClass('center');
+				$(document).ready(function(){
+					$(".parallax").parallax();
+					var o = [
+					{
+						selector: '#benefit-1',
+						offset: 200,
+						callback: '$("#benefit-1").children().addClass("animated slideInRight").removeClass("hide");'
+					}, {
+						selector: '#benefit-2',
+						offset: 200,
+						callback: '$("#benefit-2").children().addClass("animated slideInLeft").removeClass("hide");'
+					}, {
+						selector: '#benefit-3',
+						offset: 200,
+						callback: '$("#benefit-3").children().addClass("animated slideInRight").removeClass("hide");'
+					}, {
+						selector: '#benefit-4',
+						offset: 200,
+						callback: '$("#benefit-4").children().addClass("animated slideInLeft").removeClass("hide");'
+					}, {
+						selector: '#benefit-5',
+						offset: 200,
+						callback: '$("#benefit-5").children().addClass("animated slideInRight").removeClass("hide");'
+					}, {
+						selector: '#benefit-6',
+						offset: 200,
+						callback: '$("#benefit-6").children().addClass("animated slideInLeft").removeClass("hide");'
+					}, {
+						selector: '#contact',
+						offset: 100,
+						callback: '$("#contact").children().addClass("animated rotateIn").delay(1000).removeClass("rotateIn").addClass("flash")'
+					}, ];
+					if ($(window).width() >= 922) Materialize.scrollFire(o);
+					else $('.section .row').removeClass('hide').addClass('center');
+				});
 			</script>;
 		</main>
 		<footer class="page-footer -background">
