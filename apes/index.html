@@ -15,30 +15,209 @@
 		<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 		<!--<script type="text/javascript" src="/assets/home/js/combined.min.js"></script>!-->
 		<noscript><style> main, footer {display: none;} #noscript {display: inherit;}</style></noscript>
-		<style>@font-face{font-family: anders;src:url(anders.ttf);}.font-anders{font-family:anders;}main{min-height:100%;min-height:calc(100vh - 75px);overflow:hidden;}body,.page-background,.background-0{background-color:#12607D !important;}footer{position:relative;bottom:0;}.section.section-1,.section.section-2,.section.section-3{height:300px;color:white;}.section .benefit-icon{margin-top:75px !important;}@media only screen and (max-width: 601px){.section .benefit-icon{margin:0 !important;text-align:center !important;}}.background-1,.section-1{background-color:#4889F4 !important;background: -webkit-linear-gradient(75deg, #4889F4, blue);background: -o-linear-gradient(75deg, #4889F4, blue);background: -moz-linear-gradient(75deg, #4889F4, blue);background: linear-gradient(75deg, #4889F4, blue);}.background-2,.section-2{background-color: #dd9f4d !important;background: -webkit-linear-gradient(75deg, #dd9f4d, #DEB887);background: -o-linear-gradient(75deg, #dd9f4d, #DEB887);background: -moz-linear-gradient(75deg, #dd9f4d, #DEB887);background: linear-gradient(75deg, #dd9f4d, #DEB887);}.background-3,.section-3{background-color:#42a92c !important;background: -webkit-linear-gradient(75deg, #006400, #42a92c);background: -o-linear-gradient(75deg, #006400, #42a92c);background: -moz-linear-gradient(75deg, #006400, #42a92c);background: linear-gradient(75deg, #006400, #42a92c);}.background-1.opposite,.section-1.opposite{background-color:#4889F4 !important;background: -webkit-linear-gradient(75deg,blue, #4889F4);background: -o-linear-gradient(75deg,blue, #4889F4);background: -moz-linear-gradient(75deg,blue, #4889F4);background: linear-gradient(75deg,blue, #4889F4);}.background-2.opposite,.section-2.opposite{background-color: #dd9f4d !important;background: -webkit-linear-gradient(75deg, #DEB887 ,#dd9f4d);background: -o-linear-gradient(75deg, #DEB887 ,#dd9f4d);background: -moz-linear-gradient(75deg, #DEB887 ,#dd9f4d);background: linear-gradient(75deg, #DEB887 ,#dd9f4d);}.background-3.opposite,.section-3.opposite{background-color:#42a92c !important;background: -webkit-linear-gradient(75deg, #42a92c, #006400);background: -o-linear-gradient(75deg, #42a92c, #006400);background: -moz-linear-gradient(75deg, #42a92c, #006400);background: linear-gradient(75deg, #42a92c, #006400);}#white-text{color:#c0c0c0 !important;}.side-nav a{color:inherit;}.-background{background-color:#1e5799 !important;}footer.page-footer{margin-top:0;padding-top:0;}#subtitle{font-weight:800;}#noscript{height:calc(100vh - 64px);animation-delay:0.5s;animation-duration:3s;display:none;overflow:hidden;}#noscript-wrapper{width:100vw;}.footer-link{color:#fddc95 !important;}.text--blue{color:#1e5799 !important;}#request{overflow-x:hidden;}.logo{max-width:50% !important;background-color:transparent !important;margin-left:25%;}a.active{background-color:#00008B;background-color: rgba(0,0,0,0.1);}#mobile{font-size:150%;line-height:72px;}a.button-collapse{font-size:72px;line-height:72px;}.footer-nav-link{line-height:55px;}
-			#index-banner .valign{width:100vw;} figcaption{ position:relative; bottom:0} figcaption[for=parallax-1] { position:absolute; top:500px; }
-			#index-banner h1, #index-banner h4{text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;}
+		<style>
+			@font-face{font-family: anders;src:url(anders.ttf);}.font-anders{font-family:anders;}
+			main
+			{
+				min-height:100%;
+				min-height:calc(100vh - 75px);
+				overflow:hidden;
+			}
+			body,
+			.page-background,
+			.background-0
+			{
+				background-color:#FDB813 !important;
+			}
+			footer
+			{
+				position:relative;
+				bottom:0;
+			}
+			.section.section-1,
+			.section.section-2,
+			.section.section-3
+			{
+				height:300px;
+				color:white;
+			}
+			.background-1,
+			.section-1
+			{
+				background-color:#4889F4 !important;
+				background: -webkit-linear-gradient(to right, #FCD440, yellow);
+				background: -o-linear-gradient(to right, #FCD440, yellow);
+				background: -moz-linear-gradient(to right, #FCD440, yellow);
+				background: linear-gradient(to right, #FCD440, yellow);
+			}
+			.background-2,
+			.section-2
+			{
+				background-color: #dd9f4d !important;
+				background: -webkit-linear-gradient(to right, #d50000, #b71c1c );
+				background: -o-linear-gradient(to right, #d50000, #b71c1c );
+				background: -moz-linear-gradient(to right, #d50000, #b71c1c );
+				background: linear-gradient(to right, #d50000, #b71c1c );
+			}
+			.background-3,
+			.section-3
+			{
+				background-color:#42a92c !important;
+				background: -webkit-linear-gradient(to right, #e65100, orange);
+				background: -o-linear-gradient(to right, #e65100, orange);
+				background: -moz-linear-gradient(to right, #e65100, orange);
+				background: linear-gradient(to right, #e65100, orange);
+			}
+			.background-1.opposite,
+			.section-1.opposite
+			{
+				background-color:#4889F4 !important;
+				background: -webkit-linear-gradient(to right, yellow, #FCD440);
+				background: -o-linear-gradient(to right, yellow, #FCD440);
+				background: -moz-linear-gradient(to right, yellow, #FCD440);
+				background: linear-gradient(to right, yellow, #FCD440);
+			}
+			.background-2.opposite,
+			.section-2.opposite
+			{
+				background-color: #dd9f4d !important;
+				background: -webkit-linear-gradient(to right, #b71c1c , #d50000);
+				background: -o-linear-gradient(to right, #b71c1c , #d50000);
+				background: -moz-linear-gradient(to right, #b71c1c , #d50000);
+				background: linear-gradient(to right, #b71c1c , #d50000);
+			}
+			.background-3.opposite,
+			.section-3.opposite
+			{
+				background-color:#42a92c !important;
+				background: -webkit-linear-gradient(to right, orange, #e65100);
+				background: -o-linear-gradient(to right, orange, #e65100);
+				background: -moz-linear-gradient(to right, orange, #e65100);
+				background: linear-gradient(to right, orange, #e65100);
+			}
+			#white-text
+			{
+				color:#c0c0c0 !important;
+			}
+			.side-nav a
+			{
+				color:inherit;
+			}
+			.background
+			{
+				background-color:#1e5799 !important;
+			}
+			footer.page-footer
+			{
+				margin-top:0;
+				padding-top:0;
+			}
+			#subtitle
+			{
+				font-weight:800;
+			}
+			#noscript
+			{
+				height:calc(100vh - 64px);
+				animation-delay:0.5s;
+				animation-duration:3s;
+				display:none;
+				overflow:hidden;
+			}
+			#noscript-wrapper
+			{
+				width:100vw;
+			}
+			.footer-link
+			{
+				color:#fddc95 !important;
+			}
+			.text--blue
+			{
+				color:#1e5799 !important;
+			}
+			#request
+			{
+				overflow-x:hidden;
+			}
+			.logo
+			{
+				max-width:50% !important;
+				background-color:transparent !important;
+				margin-left:25%;
+			}
+			a.active
+			{
+				background-color:#00008B;
+				background-color: rgba(0,0,0,0.1);
+			}
+			#mobile
+			{
+				font-size:150%;
+				line-height:72px;
+			}
+			a.button-collapse
+			{
+				font-size:72px;
+				line-height:72px;
+			}
+			.footer-nav-link
+			{
+				line-height:55px;
+			}
+			#index-banner .valign
+			{
+				width:100vw;
+			}
+			figcaption
+			{
+				position:relative;
+				bottom:0
+			}
+			figcaption[for=parallax-1]
+			{
+				position:absolute; top:500px; 
+			}
+			#index-banner h1,
+			#index-banner h4,
+			h1.header,
+			small
+			{
+				text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
+			}	
+			.parallax-container
+			{
+				height:200px !important;
+			}
+			#index-banner.parallax-container
+			{
+				height:500px !important;
+			}
 		</style>
 	</head>
-	<body class="cyan darken-2">
+	<body>
 		<header>
 			<div class="navbar-fixed background">
-				<nav class="-background">
-					<div class="nav-wrapper -background">
+				<nav class="background">
+					<div class="nav-wrapper background">
 						<a class="brand-logo font-anders hide-on-med-and-down">Solar Energy</a>
 						<a class="brand-logo font-anders center hide-on-large-only">Solar Energy</a>
 						<a href="#" data-activates="mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 						<ul class="right hide-on-med-and-down">
-							<li><a class="flow-text" href="#">Some Link</a></li>
-							<li><a class="flow-text" href="#">Some Link</a></li>
-							<li><a class="flow-text" href="#">Some Link</a></li>
-							<li><a class="flow-text" href="#">Some Link</a></li>
+							<li><a class="flow-text" href="#topics">Topics</a></li>
+							<li><a class="flow-text" href="#resources">Resources</a></li>
+							<li><a class="flow-text" href="#energy">Energy</a></li>
+							<li><a class="flow-text" href="#geography">Geography</a></li>
+							<li><a class="flow-text" href="#time">Time</a></li>
+							<li><a class="flow-text" href="#conditions">Conditions</a></li>
 						</ul>
 						<ul class="side-nav page-background white-text" id="mobile">
-							<li><a class="center" href="#">Some Link</a></li>
-							<li><a class="center" href="#">Some Link</a></li>
-							<li><a class="center" href="#">Some Link</a></li>
-							<li><a class="center" href="#">Some Link</a></li>
+							<li><a class="center" href="#topics">Topics</a></li>
+							<li><a class="center" href="#resources">Resources</a></li>
+							<li><a class="center" href="#energy">Energy</a></li>
+							<li><a class="center" href="#geography">Geography</a></li>
+							<li><a class="center" href="#time">Time</a></li>
+							<li><a class="center" href="#conditions">Conditions</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -53,77 +232,124 @@
 			</div>
 		</div>
 		<main>
-			<div id="index-banner" class="parallax-container valign-wrapper">
-				<div class="valign">
-					<div class="section valign-container col l12">
-						<h1 class="header col s12 center green-text text-lighten-2">Solar Energy</h1>
-						<h4 class="header col s12 center green-text text-lighten-2 flow-text" id="subtitle">It's the hottest thing in town!</h4>
-					</div>
-					<div class="parallax" id="parallax-1"><img src="hero1.jpg" alt="A Picture of the sun to represent this 'hot' new technology" /></div>
-				</div>
-			</div>
-			<div><figcaption for="parallax-1" class="white-text col l12"><small>A picture of the sun to represent this "hot" new technology! <a href="https://en.wikipedia.org/wiki/Sun" target="_blank">Src</a></small></figcaption></div>
-			<div class="section animated fadeInUp" id="intro">
-				<div class="row container">
-					<div class="col s12 m12 l12">
-						<p class="flow-text white-text">Solar Energy falls under the (sub) topics: </p>
+			<div class="big-section" id="topics">
+				<div id="index-banner" class="parallax-container valign-wrapper">
+					<div class="valign">
+						<div class="section valign-container col l12">
+							<h1 class="header col s12 center green-text text-lighten-2">Solar Energy</h1>
+							<h4 class="header col s12 center green-text text-lighten-2 flow-text" id="subtitle">It's the hottest thing in town!</h4>
+						</div>
+						<div class="parallax" id="parallax-1"><img src="hero1.jpg" alt="A Picture of the sun to represent this 'hot' new technology" /></div>
 					</div>
 				</div>
-			</div>
-			<div id="index-banner-2" class="parallax-container">
-				<div class="section no-pad-bot valign-wrapper">
-					<div class="container valign">
-						<h1 class="header col s12 center green-text text-lighten-2">Land, Water, CO<sub>2</sub>, pollution</h1>
-					</div>
-					<div class="parallax" id="parallax-2"><img src="hero2.jpg" alt="Ground mounted solar farms" /></div>
-				</div>
-				<figcaption for="parallax-2" class="white-text"><small>Ground Mounted Solar Farms. <a href="http://nexamp.com/project-application/ground-mount" target="_blank">Src</a></small></figcaption>
-			</div>
-			<div class="section section-1 z-depth-5 valign-wrapper" id="benefit-1">
-				<div class="row container hide valign">
-					<div class="col s12 m5 l5 benefit-icon"><i class="material-icons large">code</i></div>
-					<div class="col s12 m7 l7">
-						<h3>Beautifully Coded</h3><span class="flow-text">When you choose  to write your website, you will get simple, clean, efficient and hack-free code. Everything works.Everywhere.</span></div>
-					</div>
-				</div>
-			<div class="section section-2 z-depth-4 valign-wrapper" id="benefit-2">
-				<div class="row container hide valign">
-					<div class="col s12 m7 l7">
-						<h3>Scalable</h3><span class="flow-text"> websites go through a big evaluation before being available for you. This includes responsive design and robust backend. Every website will work everywhere and can support any amount of content.</span>
-					</div>
-					<div class="col s12 m5 l5 right-align benefit-icon"><i class="material-icons large">settings_overscan</i></div>
-				</div>
-			</div>
-			<div class="section section-3 z-depth-3 valign-wrapper opposite" id="benefit-3">
-				<div class="row container hide valign">
-					<div class="col s12 m5 l5 benefit-icon"><i class="material-icons large">$$$</i></div>
-					<div class="col s12 m7 l7">
-						<h3>Inexpensive</h3><span class="flow-text">You probably will get the design we produce for free. That's because of our <a href="/initiative" class="red-text text-darken-4">Initiative</a> to make websites. We also have access to many tools and services at a lower rate.</span>
+				<div><figcaption for="parallax-1" class="white-text col l12"><small>A picture of the sun to represent this "hot" new technology! <a href="https://en.wikipedia.org/wiki/Sun" target="_blank">Src</a></small></figcaption></div>
+				<div class="section section-1 z-depth-4 valign-wrapper" id="topics-section">
+					<div class="row container hide valign">
+						<div class="col l12">
+							<h3>Test</h3><span class="flow-text"> ing is awesome</span>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="section section-1 z-depth-2 valign-wrapper opposite" id="benefit-4">
-				<div class="row container hide valign">
-					<div class="col s12 m7 l7">
-						<h3>Manageable</h3><span class="flow-text">We get all the emails so you don't have to. All of the background stuff is managed by us so you can focus on the content that matters most to you.</span></div>
-						<div class="col s12 m5 l5 right-align benefit-icon"><i class="material-icons large">dashboard</i></div>
+			<div class="big-section" id="resources">
+				<div id="index-banner-2" class="parallax-container">
+					<div class="section no-pad-bot valign-wrapper">
+						<div class="container valign">
+							<h1 class="header col s12 center green-text text-lighten-2">Land, Water, CO<sub>2</sub>, pollution</h1>
+						</div>
+						<div class="parallax" id="parallax-2"><img src="hero2.jpg" alt="Ground mounted solar farms" /></div>
 					</div>
-			</div>
-			<div class="section section-2 z-depth-1 valign-wrapper opposite" id="benefit-5">
-				<div class="row container hide valign">
-					<div class="col s12 m5 l5 benefit-icon"><i class="material-icons large">lock</i></div>
-					<div class="col s12 m7 l7">
-						<h3 class="right-align">Secure</h3><span class="flow-text right-align">Most  sites use the <a href="https://www.wordpress.org/" target="_blank" class="red-text text-darken-4">WordPress</a> CMS. The open-source nature of the platform makes it possible to have a robust, secure website.</span>
+					<figcaption for="parallax-2" class="white-text"><small>Ground Mounted Solar Farms. <a href="http://nexamp.com/project-application/ground-mount" target="_blank">Src</a></small></figcaption>
+				</div>
+				<div class="section section-2 z-depth-5 valign-wrapper" id="benefit-1">
+					<div class="row container hide valign">
+						<div class="col s12 m5 l5 benefit-icon"><i class="material-icons large">code</i></div>
+						<div class="col s12 m7 l7">
+							<h3>Beautifully Coded</h3><span class="flow-text">When you choose  to write your website, you will get simple, clean, efficient and hack-free code. Everything works.Everywhere.</span>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="section section-3 valign-wrapper" id="benefit-6" data-animate="jello">
-				<div class="row container hide valgin">
-					<div class="col s12 m7 l7">
-						<h3>Support</h3><span class="flow-text">However you want your website and whatever you need,  will work to make it happen. From the computer fearing individual to the tech savvy engineer, we're ready to work with you, all the way through.</span>
+			<div class="big-section" id="energy">
+				<div id="index-banner-3" class="parallax-container">
+					<div class="section no-pad-bot valign-wrapper">
+						<div class="container valign">
+							<h1 class="header col s12 center green-text text-lighten-2">Net Energy</h1>
+						</div>
+						<div class="parallax" id="parallax-3"><img src="hero3.jpg" alt="Energy" /></div>
 					</div>
-					<div class="col s12 m5 l5 right-align benefit-icon"><i class="material-icons large">live_help</i></div>
+					<figcaption for="parallax-3" class="white-text"><small>Energy. <a href="http://nexamp.com/project-application/ground-mount" target="_blank">Src</a></small></figcaption>
 				</div>
+				<div class="section section-3 z-depth-4 valign-wrapper" id="benefit-2">
+					<div class="row container hide valign">
+						<div class="col s12 m7 l7">
+							<h3>Scalable</h3><span class="flow-text"> websites go through a big evaluation before being available for you. This includes responsive design and robust backend. Every website will work everywhere and can support any amount of content.</span>
+						</div>
+						<div class="col s12 m5 l5 right-align benefit-icon"><i class="material-icons large">settings_overscan</i></div>
+					</div>
+				</div>
+			</div>
+			<div class="big-section" id="geography">
+				<div id="index-banner-4" class="parallax-container">
+					<div class="section no-pad-bot valign-wrapper">
+						<div class="container valign">
+							<h1 class="header col s12 center green-text text-lighten-2">Geography</h1>
+						</div>
+						<div class="parallax" id="parallax-4"><img src="hero4.jpg" alt="World Map" /></div>
+					</div>
+					<figcaption for="parallax-4" class="white-text"><small>World Map. <a href="http://nexamp.com/project-application/ground-mount" target="_blank">Src</a></small></figcaption>
+				</div>
+				<div class="section section-1 z-depth-3 valign-wrapper opposite" id="benefit-3">
+					<div class="row container hide valign">
+						<div class="col s12 m5 l5 benefit-icon"><i class="material-icons large">$$$</i></div>
+						<div class="col s12 m7 l7">
+							<h3>Inexpensive</h3><span class="flow-text">You probably will get the design we produce for free. That's because of our <a href="/initiative" class="red-text text-darken-4">Initiative</a> to make websites. We also have access to many tools and services at a lower rate.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="big-section" id="time">
+				<div id="index-banner-5" class="parallax-container">
+					<div class="section no-pad-bot valign-wrapper">
+						<div class="container valign">
+							<h1 class="header col s12 center green-text text-lighten-2">Time Frame</h1>
+						</div>
+						<div class="parallax" id="parallax-5"><img src="hero5.jpg" alt="World Map" /></div>
+					</div>
+					<figcaption for="parallax-5" class="white-text"><small>World Map. <a href="http://nexamp.com/project-application/ground-mount" target="_blank">Src</a></small></figcaption>
+				</div>
+				<div class="section section-2 z-depth-3 valign-wrapper opposite" id="benefit-3">
+					<div class="row container hide valign">
+						<div class="col s12 m5 l5 benefit-icon"><i class="material-icons large">$$$</i></div>
+						<div class="col s12 m7 l7">
+							<h3>Inexpensive</h3><span class="flow-text">You probably will get the design we produce for free. That's because of our <a href="/initiative" class="red-text text-darken-4">Initiative</a> to make websites. We also have access to many tools and services at a lower rate.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="big-section" id="conditions">
+				<div id="index-banner-6" class="parallax-container">
+					<div class="section no-pad-bot valign-wrapper">
+						<div class="container valign">
+							<h1 class="header col s12 center green-text text-lighten-2">Socio / Political / Humanitarian Conditions</h1>
+						</div>
+						<div class="parallax" id="parallax-6"><img src="hero6.jpg" alt="World Map" /></div>
+					</div>
+					<figcaption for="parallax-6" class="white-text"><small>World Map. <a href="http://nexamp.com/project-application/ground-mount" target="_blank">Src</a></small></figcaption>
+				</div>
+				<div class="section section-3 z-depth-3 valign-wrapper opposite" id="benefit-3">
+					<div class="row container hide valign">
+						<div class="col s12 m5 l5 benefit-icon"><i class="material-icons large">$$$</i></div>
+						<div class="col s12 m7 l7">
+							<h3>Inexpensive</h3><span class="flow-text">You probably will get the design we produce for free. That's because of our <a href="/initiative" class="red-text text-darken-4">Initiative</a> to make websites. We also have access to many tools and services at a lower rate.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="big-section1">
+				<h1 class="center green-text text-lighten-2">
+					That's it! Here are some sources:
+				</h1>
 			</div>
 			<script type="text/javascript" defer>
 				$(document).ready(function(){
@@ -159,12 +385,60 @@
 						offset: 100,
 						callback: '$("#contact").children().addClass("animated rotateIn").delay(1000).removeClass("rotateIn").addClass("flash")'
 					}, ];
-					if ($(window).width() >= 922) Materialize.scrollFire(o);
-					else $('.section .row').removeClass('hide').addClass('center');
+					//if ($(window).width() >= 922) Materialize.scrollFire(o);
+					//else $('.section .row').removeClass('hide').addClass('center');
+					$("a[href=#topics]").click(function(e)
+					{
+						e.preventDefault();
+						$('html, body').animate(
+						{
+							scrollTop: $("#topics").offset().top - 100
+						}, 2000);
+					});
+					$("a[href=#resources]").click(function(e)
+					{
+						e.preventDefault();
+						$('html, body').animate(
+						{
+							scrollTop: $("#resources").offset().top - 100
+						}, 2000);
+					});
+					$("a[href=#energy]").click(function(e)
+					{
+						e.preventDefault();
+						$('html, body').animate(
+						{
+							scrollTop: $("#energy").offset().top - 100
+						}, 2000);
+					});
+					$("a[href=#geography]").click(function(e)
+					{
+						e.preventDefault();
+						$('html, body').animate(
+						{
+							scrollTop: $("#geography").offset().top - 100
+						}, 2000);
+					});
+					$("a[href=#time]").click(function(e)
+					{
+						e.preventDefault();
+						$('html, body').animate(
+						{
+							scrollTop: $("#time").offset().top - 100
+						}, 2000);
+					});
+					$("a[href=#conditions]").click(function(e)
+					{
+						e.preventDefault();
+						$('html, body').animate(
+						{
+							scrollTop: $("#conditions").offset().top - 100
+						}, 2000);
+					});
 				});
 			</script>;
 		</main>
-		<footer class="page-footer -background">
+		<footer class="page-footer background">
 			<div class="footer-copyright">
 				<div class="container center">Created by Vikas Potluri for APES 2016 (WWHS). Unauthorized reproducition is prohibited.</div>
 			</div>
