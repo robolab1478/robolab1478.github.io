@@ -44,7 +44,7 @@
 			.background-1,
 			.section-1
 			{
-				background-color:#4889F4 !important;
+				background-color:yellow !important;
 				background: -webkit-linear-gradient(to right, #FCD440, yellow);
 				background: -o-linear-gradient(to right, #FCD440, yellow);
 				background: -moz-linear-gradient(to right, #FCD440, yellow);
@@ -53,7 +53,7 @@
 			.background-2,
 			.section-2
 			{
-				background-color: #dd9f4d !important;
+				background-color: #d50000 !important;
 				background: -webkit-linear-gradient(to right, #d50000, #b71c1c );
 				background: -o-linear-gradient(to right, #d50000, #b71c1c );
 				background: -moz-linear-gradient(to right, #d50000, #b71c1c );
@@ -62,7 +62,7 @@
 			.background-3,
 			.section-3
 			{
-				background-color:#42a92c !important;
+				background-color:orange !important;
 				background: -webkit-linear-gradient(to right, #e65100, orange);
 				background: -o-linear-gradient(to right, #e65100, orange);
 				background: -moz-linear-gradient(to right, #e65100, orange);
@@ -71,7 +71,7 @@
 			.background-1.opposite,
 			.section-1.opposite
 			{
-				background-color:#4889F4 !important;
+				background-color:yellow !important;
 				background: -webkit-linear-gradient(to right, yellow, #FCD440);
 				background: -o-linear-gradient(to right, yellow, #FCD440);
 				background: -moz-linear-gradient(to right, yellow, #FCD440);
@@ -80,7 +80,7 @@
 			.background-2.opposite,
 			.section-2.opposite
 			{
-				background-color: #dd9f4d !important;
+				background-color: #d50000 !important;
 				background: -webkit-linear-gradient(to right, #b71c1c , #d50000);
 				background: -o-linear-gradient(to right, #b71c1c , #d50000);
 				background: -moz-linear-gradient(to right, #b71c1c , #d50000);
@@ -89,11 +89,19 @@
 			.background-3.opposite,
 			.section-3.opposite
 			{
-				background-color:#42a92c !important;
+				background-color:orange !important;
 				background: -webkit-linear-gradient(to right, orange, #e65100);
 				background: -o-linear-gradient(to right, orange, #e65100);
 				background: -moz-linear-gradient(to right, orange, #e65100);
 				background: linear-gradient(to right, orange, #e65100);
+			}
+			#sources
+			{
+				background-color:orange;
+				background: -webkit-linear-gradient(to right, orange, #e65100, #b71c1c , #d50000, orange, #e65100, #b71c1c , #d50000);
+				background: -o-linear-gradient(to right, orange, #e65100, #b71c1c , #d50000, orange, #e65100, #b71c1c , #d50000);
+				background: -moz-linear-gradient(to right, orange, #e65100, #b71c1c , #d50000, orange, #e65100, #b71c1c , #d50000);
+				background: linear-gradient(to right, orange, #e65100, #b71c1c , #d50000, orange, #e65100, #b71c1c , #d50000);
 			}
 			#white-text
 			{
@@ -169,21 +177,19 @@
 			{
 				width:100vw;
 			}
-			figcaption
+			figcaption.parallax
 			{
-				position:relative;
-				bottom:0
+				position:absolute;
+				bottom:15px
 			}
 			figcaption[for=parallax-1]
 			{
 				position:absolute; top:500px; 
 			}
-			#index-banner h1,
 			#index-banner h4,
-			h1.header,
-			small
+			h1.header
 			{
-				text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
+				text-shadow: -1.5px 1px black, 1px 1.5px black, 1.5px 1px black, 1px -1.5px black;
 			}	
 			.parallax-container
 			{
@@ -198,28 +204,30 @@
 	<body>
 		<header>
 			<div class="navbar-fixed background">
-				<nav class="background">
-					<div class="nav-wrapper background">
-						<a class="brand-logo font-anders hide-on-med-and-down">Solar Energy</a>
-						<a class="brand-logo font-anders center hide-on-large-only">Solar Energy</a>
-						<a href="#" data-activates="mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+				<nav class="yellow">
+					<div class="nav-wrapper yellow red-text">
+						<a class="brand-logo red-text font-anders hide-on-med-and-down">Solar Energy</a>
+						<a class="brand-logo red-text font-anders center hide-on-large-only">Solar Energy</a>
+						<a href="#" data-activates="mobile" class="button-collapse"><i class="mdi-navigation-menu red-text"></i></a>
 						<ul class="right hide-on-med-and-down">
-							<li><a class="flow-text" href="#topics">Topics</a></li>
-							<li><a class="flow-text" href="#resources">Resources</a></li>
-							<li><a class="flow-text" href="#energy">Energy</a></li>
-							<li><a class="flow-text" href="#geography">Geography</a></li>
-							<li><a class="flow-text" href="#time">Time</a></li>
-							<li><a class="flow-text" href="#conditions">Conditions</a></li>
-							<li><a class="flow-text" href="#benefits">Benefits</a></li>
+							<li><a class="red-text flow-text" href="#topics">Topics</a></li>
+							<li><a class="red-text flow-text" href="#resources">Resources</a></li>
+							<li><a class="red-text flow-text" href="#energy">Energy</a></li>
+							<li><a class="red-text flow-text" href="#geography">Geography</a></li>
+							<li><a class="red-text flow-text" href="#time">Time</a></li>
+							<li><a class="red-text flow-text" href="#conditions">Conditions</a></li>
+							<li><a class="red-text flow-text" href="#benefits">Pros / Cons</a></li>
+							<li><a class="red-text flow-text" href="#questions">Questions</a></li>
 						</ul>
-						<ul class="side-nav page-background white-text" id="mobile">
-							<li><a class="center" href="#topics">Topics</a></li>
-							<li><a class="center" href="#resources">Resources</a></li>
-							<li><a class="center" href="#energy">Energy</a></li>
-							<li><a class="center" href="#geography">Geography</a></li>
-							<li><a class="center" href="#time">Time</a></li>
-							<li><a class="center" href="#conditions">Conditions</a></li>
-							<li><a class="center" href="#benefits">Benefits</a></li>
+						<ul class="side-nav page-background red-text" id="mobile">
+							<li><a class="red-text center" href="#topics">Topics</a></li>
+							<li><a class="red-text center" href="#resources">Resources</a></li>
+							<li><a class="red-text center" href="#energy">Energy</a></li>
+							<li><a class="red-text center" href="#geography">Geography</a></li>
+							<li><a class="red-text center" href="#time">Time</a></li>
+							<li><a class="red-text center" href="#conditions">Conditions</a></li>
+							<li><a class="red-text center" href="#benefits">Pros / Cons</a></li>
+							<li><a class="red-text center" href="#questions">Questions</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -238,17 +246,22 @@
 				<div id="index-banner" class="parallax-container valign-wrapper">
 					<div class="valign">
 						<div class="section valign-container col l12">
-							<h1 class="header col s12 center green-text text-lighten-2">Solar Energy</h1>
-							<h4 class="header col s12 center green-text text-lighten-2 flow-text" id="subtitle">It's the hottest thing in town!</h4>
+							<h1 class="header col s12 center white-text text-lighten-2">Solar Energy</h1>
+							<h4 class="header col s12 center white-text text-lighten-2 flow-text" id="subtitle">It's the hottest thing in town!</h4>
 						</div>
 						<div class="parallax" id="parallax-1"><img src="hero1.jpg" alt="A Picture of the sun to represent this 'hot' new technology" /></div>
 					</div>
 				</div>
-				<div><figcaption for="parallax-1" class="white-text col l12"><small>A picture of the sun to represent this "hot" new technology! <a href="https://en.wikipedia.org/wiki/Sun" target="_blank">Src</a></small></figcaption></div>
-				<div class="section section-1 z-depth-4 valign-wrapper" id="topics-section">
-					<div class="row container hide valign">
+				<div><figcaption for="parallax-1" class="parallax white-text col l12"><small>A picture of the sun to represent this "hot" new technology! <a href="https://en.wikipedia.org/wiki/Sun" target="_blank">Src</a></small></figcaption></div>
+				<div class="section section-2 z-depth-4 valign-wrapper" id="topics-section">
+					<div class="row container valign">
 						<div class="col l12 center">
-							<h3>Topics</h3><span class="flow-text">testing</span>
+							<h3>Topics</h3>
+							<ul class="flow-text">
+								<li>Section III Subsection B - 2. Population Size</li>
+								<li>Section IV Subsection D - 1. Urban Land Development</li>
+								<li>Section V Subsection G - Renewable Energy </li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -257,20 +270,20 @@
 				<div id="index-banner-2" class="parallax-container">
 					<div class="section no-pad-bot valign-wrapper">
 						<div class="container valign">
-							<h1 class="header col s12 center green-text text-lighten-2">Land, Water, CO<sub>2</sub>, pollution</h1>
+							<h1 class="header col s12 center white-text text-lighten-2">Land, Water, CO<sub>2</sub>, pollution</h1>
 						</div>
 						<div class="parallax" id="parallax-2"><img src="hero2.jpg" alt="Ground mounted solar farms" /></div>
 					</div>
-					<figcaption for="parallax-2" class="white-text"><small>Ground Mounted Solar Farms. <a href="http://nexamp.com/project-application/ground-mount" target="_blank">Src</a></small></figcaption>
+					<figcaption for="parallax-2" class="parallax white-text"><small>Ground Mounted Solar Farms. <a href="http://nexamp.com/project-application/ground-mount" target="_blank">Src</a></small></figcaption>
 				</div>
-				<div class="section section-2 z-depth-5 valign-wrapper" id="benefit-1">
-					<div class="row container hide valign">
+				<div class="section section-3 z-depth-5 valign-wrapper" id="benefit-1">
+					<div class="row container valign">
 						<div class="col 112">
 							<ul class="flow-text">
-								<li><strong>Land</strong> - Mines resources. Requires requires clearing and grading. Deforestation and loss of biodviersity</li>
-								<li><strong>Water</strong> - Clearing and grading result in alteration of drainage channels which increases runoff and erosion.  Chemical spills (for example, dust suppressants, dielectric) can contaminate water supplies.  This can have an especially devastating effect on arid areas. </li>
-								<li><strong>Carbon Dioxide</strong> - Mining resources and deforestation can increase carbon dioxide levels.</li>
-								<li><strong>Pollution</strong> - THIS FIELD IS EMPTY</li>
+								<li><strong>Land</strong> - Mines resources. Requires clearing and grading. Causes deforestation and loss of biodiversity. 2.8 acres of land are needed to generate 1 gigawatt of energy using solar technology.</li>
+								<li><strong>Water</strong> - Clearing and grading result in alteration of drainage channels which increases runoff and erosion.  Chemical spills (for example, dust suppressants, dielectric) can contaminate water supplies.  This can have an especially devastating effect on arid areas. However, after production, minimal water is used.</li>
+								<li><strong>Carbon Dioxide</strong> - Mining resources and deforestation can increase carbon dioxide levels. Change in CO<sub>2</sub> levels vary.</li>
+								<li><strong>Pollution</strong> - Mining Resources and Land Development increases pollutants in the atmosphere. Pollution is produced based on materials required and geographic location. Amount of pollution varies</li>
 							</ul>
 						</div>
 					</div>
@@ -280,17 +293,17 @@
 				<div id="index-banner-3" class="parallax-container">
 					<div class="section no-pad-bot valign-wrapper">
 						<div class="container valign">
-							<h1 class="header col s12 center green-text text-lighten-2">Net Energy</h1>
+							<h1 class="header col s12 center white-text text-lighten-2">Net Energy</h1>
 						</div>
 						<div class="parallax" id="parallax-3"><img src="hero3.jpg" alt="Energy" /></div>
 					</div>
-					<figcaption for="parallax-3" class="white-text"><small>Energy. <a href="http://nexamp.com/project-application/ground-mount" target="_blank">Src</a></small></figcaption>
+					<figcaption for="parallax-3" class=" parallax white-text"><small>Power lines to represent energy. <a href="http://www.dentons.com/en/find-your-dentons-team/industry-sectors/energy.aspx" target="_blank">Src</a></small></figcaption>
 				</div>
-				<div class="section section-3 z-depth-4 valign-wrapper" id="benefit-2">
-					<div class="row container hide valign">
+				<div class="section section-2 z-depth-4 valign-wrapper" id="benefit-2">
+					<div class="row container valign">
 						<div class="col l12 center">
 							<p class="flow-text">
-								<strong>Net Energy </strong> is defined as "<i>the ratio of energy required to release useable energy and the useful energy </i>."
+								<strong>Net Energy </strong> is defined as "<i>the ratio of energy required to release usable energy and the useful energy </i>."
 							</p>
 							<p class="flow-text">
 								Solar power has a net energy of 3:2
@@ -303,21 +316,21 @@
 				<div id="index-banner-4" class="parallax-container">
 					<div class="section no-pad-bot valign-wrapper">
 						<div class="container valign">
-							<h1 class="header col s12 center green-text text-lighten-2">Geography</h1>
+							<h1 class="header col s12 center white-text text-lighten-2">Geography</h1>
 						</div>
 						<div class="parallax" id="parallax-4"><img src="hero4.jpg" alt="World Map" /></div>
 					</div>
-					<figcaption for="parallax-4" class="white-text"><small>World Map. <a href="http://nexamp.com/project-application/ground-mount" target="_blank">Src</a></small></figcaption>
+					<figcaption for="parallax-4" class="parallax white-text"><small>World Map. <a href="https://www.bu.edu/earth/education/undergraduate/majors/physical-geography/" target="_blank">Src</a></small></figcaption>
 				</div>
-				<div class="section section-1 z-depth-3 valign-wrapper opposite" id="benefit-3">
-					<div class="row container hide valign">
+				<div class="section section-3 z-depth-3 valign-wrapper opposite">
+					<div class="row container valign">
 						<div class="col s12 m6 l6">
 							<img src="geographical_locations.png" class="responsive-img" alt="Geographical Locations (US)" />
-							<figcaption class="center orange-text text-darken-4">Caption. Image from src</figcaption>
+							<figcaption class=" white-text text-darken-4">(Map of world solar plants in US; <a href="http://www.energymanagertoday.com/it-takes-2-8-acres-of-land-to-generate-1gwh-of-solar-energy-per-year-says-nrel-094185/" target="_blank">source</a>) The map shows a lot of solar energy being produced extremely in the extremes - East and West United States. West United States has quite a few in comparison to the East, with most of the concentration being in California. Unlike the East, the West has quite a few CSP plants. Most of the Midwest / East does not have panels, and the South (specifically Texas and New Mexico) has some.</figcaption>
 						</div>
 						<div class="col s12 m6 l6">
 							<img src="geographical_locations_world.png" class="responsive-img" alt="Geographical Locations (Worldwide)" />
-							<figcaption class="center orange-text text-darken-4">Caption. Image from src</figcaption>
+							<figcaption class="white-text text-darken-4">(Map of world energy sources; <a href="https://www.washingtonpost.com/news/wonk/wp/2012/12/08/all-of-the-worlds-power-plants-in-one-handy-map/" target="_blank">source</a>) The majority of solar power in the world is concentrated in Europe and the United States. Europe is by far much denser in Solar Energy than the states however, and solar has yet to grow in prominence to other parts of the world.</figcaption>
 						</div>
 					</div>
 				</div>
@@ -326,18 +339,19 @@
 				<div id="index-banner-5" class="parallax-container">
 					<div class="section no-pad-bot valign-wrapper">
 						<div class="container valign">
-							<h1 class="header col s12 center green-text text-lighten-2">Time Frame</h1>
+							<h1 class="header col s12 center white-text text-lighten-2">Time Frame</h1>
 						</div>
 						<div class="parallax" id="parallax-5"><img src="hero5.jpg" alt="World Map" /></div>
 					</div>
-					<figcaption for="parallax-5" class="white-text"><small>World Map. <a href="http://nexamp.com/project-application/ground-mount" target="_blank">Src</a></small></figcaption>
+					<figcaption for="parallax-5" class="parallax white-text"><small>Years scattered in random pattern. <a href="http://www.bankinfosecurity.com/blogs/cybersecurity-two-years-at-time-p-1697/op-1" target="_blank">Src</a></small></figcaption>
 				</div>
-				<div class="section section-2 z-depth-3 valign-wrapper opposite" id="benefit-3">
-					<div class="row container hide valign">
+				<div class="section section-2 z-depth-3 valign-wrapper opposite">
+					<div class="row container valign">
 						<div class="col l12 flow-text">
 							<ul>	
 								<li><strong>1954</strong> -  Daryl Chapin, Calvin Fuller, and Gerald Pearson design a photovoltaic cell at bell labs, which was the first solar cell capable of generating enough electricity to power everyday equipment.</li>
-								<li>THIS IS <strong>NOT</strong> DONE</li>
+								<li><strong>1982</strong> - The worldwide production of energy from solar energy exceeds 9.3 megawatts, just the next year in 1983, production almost doubles to 21.3 megawatts.</li>
+								<li><strong>1999</strong> - After continued improvements, worldwide production using photovoltaic cells exceeds 1000 megawatts</li>
 							</ul>
 						</div>
 					</div>
@@ -347,18 +361,20 @@
 				<div id="index-banner-6" class="parallax-container">
 					<div class="section no-pad-bot valign-wrapper">
 						<div class="container valign">
-							<h1 class="header col s12 center green-text text-lighten-2">Socio / Political / Humanitarian Conditions</h1>
+							<h1 class="header col s12 center white-text text-lighten-2">Socio / Political / Humanitarian Conditions</h1>
 						</div>
 						<div class="parallax" id="parallax-6"><img src="hero6.jpg" alt="World Map" /></div>
 					</div>
-					<figcaption for="parallax-6" class="white-text"><small>World Map. <a href="http://nexamp.com/project-application/ground-mount" target="_blank">Src</a></small></figcaption>
+					<figcaption for="parallax-6" class="parallax white-text"><small>Solar Lamps to aid in studies - Africa. <a href="http://www.reeep.org/projects/lighting-africa-expansion-ethiopia-and-tanzania" target="_blank">Src</a></small></figcaption>
 				</div>
 				<div class="section section-3 z-depth-3 valign-wrapper opposite" id="benefit-3">
-					<div class="row container hide valign">
+					<div class="row container valign">
 						<div class="col l12 flow-text">
 							<ul>
-								<li><strong><abbr title="Solar Energy Industries Association">SEIA</abbr></strong> - agreed to a commitment toward social and environmental responsibility.</li>
-								<li><strong>Social</strong> - Operating with respect to human rights and electrical safety; Working hard to reduce resource consumption and maximize energy efficiency. Additinally, requires workspace safety.</li>
+								<li><strong><abbr title="Solar Energy Industries Association">SEIA</abbr></strong> (Solar Energy Industries Association) - agreed to a commitment toward social and environmental responsibility.</li>
+								<li><strong>Social</strong> - Operating with respect to human rights and electrical safety; Working hard to reduce resource consumption and maximize energy efficiency. Additionally, requires workplace safety.</li>
+								<li><strong>Political</strong> - Subsidize and continue to mandate only if produces the same amount of energy as fossil fuels and has less environmental damage.</li>
+								<li><strong>Humanitarian</strong> - There's a lot we've done - Reduce fires, help improve study time in developing countries, become more environmentally friendly and continue to provide a a healthy electricity production solution (no toxins or socially dangerous materials)</li>
 							</ul>
 						</div>
 					</div>
@@ -368,139 +384,166 @@
 				<div id="index-banner-7" class="parallax-container">
 					<div class="section no-pad-bot valign-wrapper">
 						<div class="container valign">
-							<h1 class="header col s12 center green-text text-lighten-2">Benefits</h1>
+							<h1 class="header col s12 center white-text text-lighten-2">Pros / Cons</h1>
 						</div>
-						<div class="parallax" id="parallax-7"><img src="hero7.jpg" alt="World Map" /></div>
+						<div class="parallax" id="parallax-7"><img src="hero7.jpeg" alt="ThumbsUp / ThumbsDown" /></div>
 					</div>
-					<figcaption for="parallax-7" class="white-text"><small>World Map. <a href="http://nexamp.com/project-application/ground-mount" target="_blank">Src</a></small></figcaption>
+					<figcaption for="parallax-7" class="parallax black-text"><small>Thumbs up and down representing good and bad. <a href="http://theundercoverrecruiter.com/respond-to-counter-offer/" target="_blank">Src</a></small></figcaption>
 				</div>
 				<div class="section section-2 z-depth-3 valign-wrapper opposite">
-					<div class="row container hide valign">
-						<div class="col s12 m7 l7">
-							<h3>Inexpensive</h3><span class="flow-text">You probably will get the design we produce for free. That's because of our <a href="/initiative" class="red-text text-darken-4">Initiative</a> to make websites. We also have access to many tools and services at a lower rate.</span>
+					<div class="row container valign">
+						<div class="col s12 m6 l6">
+							<h3 class="center">Pros</h3>
+							<ol CLASS="flow-text">
+								<li>Indefinitely renewable</li>
+								<li>Require little maintenance</li>
+								<li>Has several different uses</li>
+							</ol>
+						</div>
+						<div class="col s12 m6 l6">
+							<h3 class="center">Cons</h3>
+							<ol class="flow-text">
+								<li>Cannot create electricity at night (intermittent)</li>
+								<li>Requires large amounts of land area to be able produce energy for a community</li>
+								<li>Low conversion efficiency </li>
+							</ol>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="big-section" id="closing">
-				<h1 class="center green-text text-lighten-2">
-					That's it! Here are some sources:
-				</h1>
+			<div class="big-section" id="questions">
+				<div id="index-banner-8" class="parallax-container">
+					<div class="section no-pad-bot valign-wrapper">
+						<div class="container valign">
+							<h1 class="header col s12 center white-text text-lighten-2">Questions (and Answers)</h1>
+						</div>
+						<div class="parallax" id="parallax-8"><img src="hero8.jpg" alt="World Map" /></div>
+					</div>
+					<figcaption for="parallax-8" class="parallax black-text"><small>Repeating Question Mark. <a href="https://pixabay.com/en/question-mark-note-duplicate-457456/" target="_blank">Src</a></small></figcaption>
+				</div>
+				<div class="section section-3 z-depth-3 valign-wrapper opposite">
+					<div class="row container valign">
+						<ol class="flow-text white-text center">
+							<li class="center">When were the first solar cells developed and who developed them? <a class="waves-effect waves-light modal-trigger" id="modal-1" href="#q1">Answer</a></li>
+							<li class="center">What state in the U.S. has the highest concentration of solar energy? <a class="waves-effect waves-light modal-trigger" id="modal-2" href="#q2">Answer</a></li>
+							<li class="center">What is SEIA and explain their policy considering social responsibility? <a class="waves-effect waves-light modal-trigger" id="modal-3" href="#q3">Answer</a></li>
+						</ol>
+					</div>
+				</div>
 			</div>
+			<div class="big-section center white-text container" id="closing">
+				<h1 class="center">Bibliography</h1>
+				<ul>
+					<li><a class="flow-text" href="http://solareis.anl.gov/guide/environment/" target="_blank">Argonne National Laboratory</a></li>
+					<li><a class="flow-text" href="http://www.iepm.com/what-is-net-energy-ratio-or-ner/" target="_blank">Independent Energy Partners</a></li>
+					<li><a class="flow-text" href="https://www1.eere.energy.gov/solar/pdfs/solar_timeline.pdf" target="_blank">US Dept. Energy</a></li>
+					<li><a class="flow-text" href="http://www.seia.org/policy/environment/sustainability/solar-industry-environment-social-responsibility-commitment" target="_blank">Solar Energies Industries Association</a></li>
+					<li><a class="flow-text" href="http://www.tc.umn.edu/~dama0023/solar.html" target="_blank">University of Minnesota</a></li>
+					<li><a class="flow-text" href="http://www.technologystudent.com/energy1/solar7.htm" target="_blank">TechnologyStudent</a></li>
+					<li><a class="flow-text" href="http://www.mnn.com/green-tech/research-innovations/blogs/how-much-co2-does-one-solar-panel-create" target="_blank">Mother Nature Network</a></li>
+					<li><a class="flow-text" href="http://www.kcet.org/news/redefine/rewire/solar/fact-check-how-much-water-does-solar-power-really-use.html" target="_blank">KCET</a></li>
+					<li><a class="flow-text" href="http://www.energymanagertoday.com/it-takes-2-8-acres-of-land-to-generate-1gwh-of-solar-energy-per-year-says-nrel-094185/" target="_blank">EnergyManagerToday</a></li>
+					<li><a class="flow-text" href="http://spectrum.ieee.org/green-tech/solar/solar-energy-isnt-always-as-green-as-you-think" target="_blank">IEEE</a></li>
+				</ul>
+			</div>
+			<div class="modals">
+				<div id="q1" class="modal">
+					<div class="modal-content center">
+						<h3>Question:</h3>
+						<p class="flow-text">When were the first solar cells developed and who developed them?</p>
+						<br/><br/>
+						<h3>Answer:</h3>
+						<p class="flow-text"><em>The first solar cells were developed in <strong>1954</strong> by Daryl Chapin, Calvin Fuller, and Gerald Pearson</em></p>
+					</div>
+				</div>
+				<div id="q2" class="modal">
+					<div class="modal-content center">
+						<h3>Question:</h3>
+						<p class="flow-text">What state in the U.S. has the highest concentration of solar energy?</p>
+						<br/><br/>
+						<h3>Answer:</h3>
+						<p class="flow-text"><em>California</em></p>
+					</div>
+				</div>
+				<div id="q3" class="modal">
+					<div class="modal-content center">
+						<h3>Question:</h3>
+						<p class="flow-text">What is SEIA and explain their policy considering social responsibility?</p>
+						<br/><br/>
+						<h3>Answer:</h3>
+						<p class="flow-text"><em>SEIA stands for Solar Energy Industries Association. They operate with a policy focusing on respecting human rights.</em>
+						</p>
+					</div>
+				</div>
 			</div>
 			<script type="text/javascript" defer>
 				$(document).ready(function(){
 					$("html").niceScroll();
 					$(".button-collapse").sideNav();
 					$(".parallax").parallax();
-					var o = [
-					{
-						selector: '#topics',
-						offset: 200,
-						callback: '$("#topics").children().addClass("animated slideInRight").removeClass("hide").children().removeClass("hide");'
-					}, {
-						selector: '#resources',
-						offset: 200,
-						callback: '$("#resources").children().addClass("animated slideInLeft").removeClass("hide").children().removeClass("hide");'
-					}, {
-						selector: '#energy',
-						offset: 200,
-						callback: '$("#energy").children().addClass("animated slideInRight").removeClass("hide").children().removeClass("hide");'
-					}, {
-						selector: '#geography',
-						offset: 200,
-						callback: '$("#geography").children().addClass("animated slideInLeft").removeClass("hide").children().removeClass("hide");'
-					}, {
-						selector: '#time',
-						offset: 200,
-						callback: '$("#time").children().addClass("animated slideInRight").removeClass("hide").children().removeClass("hide");'
-					}, {
-						selector: '#conditions',
-						offset: 200,
-						callback: '$("#conditions").children().addClass("animated slideInLeft").removeClass("hide").children().removeClass("hide");'
-					}, {
-						selector: '#closing',
-						offset: 100,
-						callback: '$("#closing").children().addClass("animated rotateIn").delay(1000).removeClass("rotateIn").addClass("flash")'
-					}, ];
-					if ($(window).width() >= 922) Materialize.scrollFire(o);
-					else $('.section .row').removeClass('hide').addClass('center');
+					$("#modal-1").leanModal();
+					$("#modal-2").leanModal();
+					$("#modal-3").leanModal();
+					if ($(window).width() < 922) $('.section .row').removeClass('hide').addClass('center');
 					$("a[href=#topics]").click(function(e)
 					{
 						e.preventDefault();
-						$('html, body').animate(
-						{
-							scrollTop: $("#topics").offset().top - 100
-						}, 2000);
+						$('html, body').animate({scrollTop: $("#topics").offset().top - 100}, 2000);
 						$(".button-collapse").sideNav("hide")
 					});
 					$("a[href=#resources]").click(function(e)
 					{
 						e.preventDefault();
-						$('html, body').animate(
-						{
-							scrollTop: $("#resources").offset().top - 100
-						}, 2000);
+						$('html, body').animate({scrollTop: $("#resources").offset().top - 100}, 2000);
 						$(".button-collapse").sideNav("hide")
 					});
 					$("a[href=#energy]").click(function(e)
 					{
 						e.preventDefault();
-						$('html, body').animate(
-						{
-							scrollTop: $("#energy").offset().top - 100
-						}, 2000);
+						$('html, body').animate({scrollTop: $("#energy").offset().top - 100}, 2000);
 						$(".button-collapse").sideNav("hide")
 					});
 					$("a[href=#geography]").click(function(e)
 					{
 						e.preventDefault();
-						$('html, body').animate(
-						{
-							scrollTop: $("#geography").offset().top - 100
-						}, 2000);
+						$('html, body').animate({scrollTop: $("#geography").offset().top - 100}, 2000);
 						$(".button-collapse").sideNav("hide")
 					});
 					$("a[href=#time]").click(function(e)
 					{
 						e.preventDefault();
-						$('html, body').animate(
-						{
-							scrollTop: $("#time").offset().top - 100
-						}, 2000);
+						$('html, body').animate({scrollTop: $("#time").offset().top - 100}, 2000);
 						$(".button-collapse").sideNav("hide")
 					});
 					$("a[href=#conditions]").click(function(e)
 					{
 						e.preventDefault();
-						$('html, body').animate(
-						{
-							scrollTop: $("#conditions").offset().top - 100
-						}, 2000);
+						$('html, body').animate({scrollTop: $("#conditions").offset().top - 100}, 2000);
 						$(".button-collapse").sideNav("hide")
 					});
 					$("a[href=#benefits]").click(function(e)
 					{
 						e.preventDefault();
-						$('html, body').animate(
-						{
-							scrollTop: $("#benefits").offset().top - 100
-						}, 2000);
+						$('html, body').animate({scrollTop: $("#benefits").offset().top - 100}, 2000);
+						$(".button-collapse").sideNav("hide")
+					});
+					$("a[href=#questions]").click(function(e)
+					{
+						e.preventDefault();
+						$('html, body').animate({scrollTop: $("#questions").offset().top - 100}, 2000);
 						$(".button-collapse").sideNav("hide")
 					});
 				});
-			</script>;
+			</script>
 		</main>
-		<footer class="page-footer background">
+		<footer class="page-footer yellow">
 			<div class="footer-copyright">
-				<div class="container center">Created by Vikas Potluri for APES 2016 (WWHS). Unauthorized reproducition is prohibited.</div>
+				<div class="container center red-text">Created by Vikas Potluri for APES 2016 (WWHS). Unauthorized reproduction is prohibited. <a href="https://www.github.com/vikaspotluri123/vikaspotluri123.github.io/tree/master/apes" target="_blank">Source</a></div>
 			</div>
 		</footer>
 	</body>
 	<div id="scripts" class="hide">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">-->
-		<!--<script type="text/javascript" src="/assets/home/js/global.js" defer></script>-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
 		<script type="text/javascript" src="nicescroll.js"></script>
 	</div>
