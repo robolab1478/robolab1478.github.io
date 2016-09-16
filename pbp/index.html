@@ -9,46 +9,217 @@
 		<meta name='HandheldFriendly' content='true' />
 		<meta charset='UTF-8' />
 		<link rel="stylesheet" href="material.css" type="text/css" />
+		<link rel="stylesheet" href="animate.css" type="text/css" />
 		<script type="text/javascript" src="jquery.js"></script>
 		<style>
+			@font-face
+			{
+				font-family:good;
+				src:url(good.ttf);
+			}
+			.font-good{font-family:good;}
+			@font-face
+			{
+				font-family:bad;
+				src:url(bad.ttf);
+			}
+			.font-bad{font-family:bad;}
+			@font-face
+			{
+				font-family:fake;
+				src:url(fake.ttf);
+			}
+			.font-fake{font-family:fake;}
 			body {
 			display: flex;
 			min-height: 100vh;
 			flex-direction: column;
 			}
-
 			main {
 			flex: 1 0 auto;
 			}
+			.parallax
+			{
+				z-index:2;
+			}
+			#good .parallax, #fake .parallax
+			{
+				filter:blur(8px);
+			}
+			#intro p, #good h1, #bad h1, #fake h1
+			{
+				z-index:3;
+				position:relative;
+				width:99vw;
+				webkit-text-stroke: 1px black;
+			   text-shadow:
+				   3px 3px 0 #500000,
+				 -1px -1px 0 #500000,  
+				  1px -1px 0 #500000,
+				  -1px 1px 0 #500000,
+				   1px 1px 0 #500000;
+			}
+			#intro
+			{
+				height:100vh;
+				background-image:url(vikas2.png);
+				background-size:cover;
+				background-position:center;
+				background-attachment:fixed;
+				background-repeat:no-repeat;
+			}
+			#intro p
+			{
+				position:absolute;
+				margin:0 auto;
+				bottom:50px;
+				margin-left:2vw;
+				width:95vw;
+				overflow-y:hidden;
+				z-index:1;
+			}
+			#intro h1
+			{
+				-webkit-text-stroke: 1px black;
+				text-shadow:
+					3px 3px 0 #500000,
+					-1px -1px 0 #500000,  
+					1px -1px 0 #500000,
+					-1px 1px 0 #500000,
+					1px 1px 0 #500000;
+			}
+			.delay-by-one
+			{
+				-webkit-animation-delay:1s;
+				animation-delay:1s
+			}
+			.maroon-text
+			{
+				color:#500000 !important
+			}
+			.maroon
+			{
+				background:#500000 !important
+			}
+			.justify
+			{
+				text-align:justify
+			}
+			#navigation
+			{
+				position:fixed;
+				top:45%;
+				right:15px;
+				z-index:100;
+			}
+			#navigation li
+			{
+				font-size:32px;
+				height:25px;
+				text-align:right
+			}
+			#navigation li:hover:before
+			{
+				content:attr(data-title);
+				font-size:12px;
+				color:white;
+				position:absolute;
+				right:15px;
+				margin-top:15px;
+				width:200px;
+			}
 		</style>
 	</head>
-	<body>
+	<body class="maroon">
 		<header>
-			
+			<div class="section no-pad-bot" id="intro">
+				<h1 class="white-text center">
+					HOWDY!
+				</h1>
+				<p class="white-text center animated delay-by-one hide flow-text hoverable">
+					My name is Vikas Potluri, I'm a Biomedical Engineering Major from Austin, Texas, but most importantly, I'm THE loudest, and THE proudest member of the Fightin' Texas Aggie Class of 2020!!
+				</p>
+			</div>
 		</header>
 		<main>
-			<div class="section">
-				<div class="parallax-container">
-					<div class="parallax"><img src="the-good.jpg"></div>
+			<div class="section blue darken-4 white-text" id="introduction">
+				<div class="container flow-text justify">
+				Welcome to this <strong>Personal Branding Profile</strong>! You don't know me that well, but I'm a <em>website</em> ! Why are you here? Well, that's a great question! I have no idea to be honest. I'm here because Vikas made me. It has something to do with his <em>Intro to Design</em> course, but I'm a website, so I don't know what that means. However, I <em>can</em> tell you that I'm split up into sections - The <em>good</em>, The <em>bad</em>, The <em>ficticious</em> and The <em>end</em>. Every section gives you a deeper look into the beliefs, ideas and <em>stuff</em> that make Vikas... well, Vikas!
 				</div>
 			</div>
-			<div class="section">
-				<div class="parallax-container">
-					<div class="parallax"><img src="the-bad.jpg"></div>
+			<div class="section no-pad-top no-pad-bot" id="good">
+				<div class="parallax-container valign-wrapper">
+					<h1 class="valign center white-text font-good">The Good</h1>
+					<div class="parallax"><img src="lion.png"></div>
 				</div>
 			</div>
-			<div class="section">
-				<div class="parallax-container">
-					<div class="parallax"><img src="the-questionable.jpg"></div>
+			<div class="section yellow darken-1" id="good-content">
+				<div class="container flow-text maroon-text">
+					<p>Vikas says that it's always great to start with good news, even though that means it can only go downhill from there. I'm a website, so I'm incapable of having an opinion. If you want to go anywhere, click the little dots on the right side of your screen!	</p>
+					<p>The thing about being a website is your owner decides everything about you. While I'm completely incapable of having an opinion, my thought process is capable enough to make me resent Vikas for not letting me have an opinion (see the irony?!). I'm also extremely intelligent about Vikas' capabilities. For example, I know that he serves as a great <strong>leader</strong> and is extremely <strong>visionary</strong>. He's also a <strong>badass with a computer (well actually pretty much anything electronic)</strong>, somehow manages to find enjoyment in doing <strong>household chores</strong> (like <em>even I </em> can't find enjoyment in that, and I'm a WEBSITE!), when he decides to do something, he stays <strong>determined</strong> until the very end, and is quite <strong>handy with his hands</strong>!</p>
+					<p>The thing about Vikas is he likes to leave stuff on cliff hangers. Since I'm a lot like him, I decided to not conclude that last paragraph. What a rebel I am! Vikas was just telling me that even though it's 2 PM on a Friday, even thoug he <em>really</em> doesn't want to be telling me all this, he figured that he might as well have some fun while telling me. I guess it's because he believes that <strong>if you're going to do something, have fun doing it</strong>. Speaking of his beliefs (yeah, I'm pulling a <a href="https://www.youtube.com/user/LinusTechTips" target="_blank">Linus</a>; deal with it!) he also believes that <strong>everyone deserves an equal chance</strong>. See, I'm like that too! Take my looks, for example. While I have some blemishes all around me, I still do my best to look beautiful for every device, whether it be an iTouch, iPhone, iPad, &lt;Brand Name> Android Phone, &lt;Brand Name> <em>Windows Phone</em>, Desktop, tablet, <em>whatever</em> !</p>
+					<p>Vikas likes a lot of stuff. He was talking about it for a long time, and I zoned out for a little bit (please don't tell him! He might take away my ability to think 😲). He was telling me that he's fond of <strong>doing stuff with his hands</strong> (maybe that's why he's handy with his hands!), <strong>eating food</strong>, <strong>robotics</strong> and something called <strong>Material</strong> (I'm told that I'm written using a <a href="http://materializecss.com/" target="_blank">framework</a> based on it. I wish I knew what that means. He gave me a <a href="https://material.google.com/" target="_blank">link</a> but I'm incapable of browsing the internet like you human people). He got really sappy talking about his <strong>family</strong>, <strong>living in the moment</strong>, and <strong>Mother Nature</strong>, so he may or may not be in love with them. Again, he decides everything about me and apparently he decided I'm only partially smart.</p>
+					<p>By now, you might have realized that Vikas has talent. You're probably wondering what inspires him. If you're not, too bad because I'm gonna drop some knowledge on you. One sec lemme pull it up... Alright I'm ready! When he asked me to ask him (honestly he's super weird, I mean who talks to a <em>website</em>?) what inspires him, he went off on a tangent like he's so good at doing, but I'm apparently smart enough to realize that he's inpsired by a few things including (but not limited to) <strong>A need</strong>, <strong>risk</strong>, <strong>curiosity</strong>, and <strong>people not believing in his abilities</strong>. He went super in depth, but I'm going to try and summarize it (my summarizing abilities are very limited). He said he's inspired by a need. I remember him telling me something about this organization called <a href="https://hexr.org" target="_blank">HexR</a>, which basically makes websites for small businesses and nonprofits at super low prices (like free) because they need them and he has the ability to provide for them. He told me that he's inspired by risk because it's a challege, and what's living life without challenging yourself? When he told me he was inspired by curiosity, I didn't think anything because he didn't let me, but he said that we do stuff by being curious. I mean what's the point in seeing if life exists on mars, other than because humans are curious? The last thing he told me was people not believing in him inspired him. I think it has something to do with the fact that for the first time ever, his robotics team made it to elimination rounds because he and the rest of the team refused to capitulate to the lack of support from certain members in the team. Hey, those are his words, not mine!</p>
+					<p>I'm going to keep on making Vikas look great because I can. He became an <a href="https://en.wikipedia.org/wiki/Eagle_Scout_(Boy_Scouts_of_America)" target="_blank">Eagle Scout</a> on January 2, 2012 at the young age of... (give me a second I'm slow at math)... ... ... ... ... oh right! At the young age of <strong>13</strong>. Just give you some perspective, in 2013, the average age that a boy became an Eagle was <strong>17</strong> <sup><a href="http://blog.scoutingmagazine.org/2014/02/12/behind-the-numbers-analyzing-the-2013-eagle-scout-class/" target="_blank">source</a></sup>. That's <strong>4 years</strong> before most people. Impressive, huh?! Not only that, he aged out of Boy Scouts with a lot of Eagle Palms (which basicaly said he was active in Boy Scouts post-Eagle) and 70 something Merit Badges (you need 21 to become an Eagle Scout). While his scouting acheivements are quite big, he also serves as the chief executive, senior developer and public relations officer for <a href="https://hexr.org" target="_blank">HexR</a>, and through countless hours of hard work and determination, one of the <strong>3</strong> most valuable people for the 2015-2016 <a href="http://team2583.org">Westwood Robotics</a> year, helping produce an advancement to state in the fall competition, and producing unbelievable (as in never happened before) results in the Spring competition.</p>
+					<p>Wow. This is going to be a big section. Probably the biggest one. That's not a bad thing, though. I would much rather spend a long time discussing the awesomeness of Vikas then talking about stuff that's not real (<a class="smoothscroll" href="#fake">ficticious</a>), or that's not good (<a class="smoothscroll" href="#bad">bad</a>, <a class="smoothscroll" href="#end">end</a>). For example, right now is the perfect time to talk about some of his goals. I know that he might hate me for it now, but in the end, he's going to realize it was all for the best. Vikas is a very simple man. He really just wants to enjoy the journey through life, but if he had to pick 3 things that he really wanted to do, they would be <strong>get married</strong>, <strong>make something that positively impacts the world</strong>, and <strong>die knowing that he spent the time looking at and doing the little things</strong>. He also has a dream, which is very simple... <strong>revolutionize</strong>. That doesn't really sound like a dream, does it? Well, that's because a dream is defined as <em>a strongly desired goal or purpose</em>. For Vikas, it doesn't matter <em>what</em>, or <em>where</em> he revolutionizes, he just wants to revolutionize something and have fun doing it!</p>
+					<p>That's all I have to say about happiness! Keep on scrolling, or <a href="#bad" class="smoothscroll">click me</a> to go learn about the bad stuff.</p>
 				</div>
 			</div>
-			<div class="section">
-				<div class="parallax-container">
+			<div class="section no-pad-top no-pad-bot" id="bad">
+				<div class="parallax-container valign-wrapper">
+					<h1 class="valign center white-text font-bad">T h e&nbsp;&nbsp;&nbsp;&nbsp;B a d</h1>
+					<div class="parallax"><img src="joker.png"></div>
+				</div>
+			</div>
+			<div class="section grey darken-4 flow-text white-text" id="bad-content">
+				<div class="container">
+					<p>Vikas doesn't like talking about the bad. However, he knows that there's times where it has to be done, and he realizes that this is one of those times. For example, he doesn't like the fact that he's deathly afraid of <strong>being left alone forever</strong>, <strong>rejection (anuptaphobia)</strong> and <strong>Materializsm (hylephobia)</strong>, but he is. As a website, I'm always alone, and I find it quite peaceful, so I don't get why he hates being left alone. However, I totally get why he's scared of rejection. You humans alwasys create a standard for everything and categorize people. Like you have good grades, you can come to this top tier university. But what does that really mean? Does it mean that you were great at cheating? Does it mean you're super smart? Whatever it means, there is no reason someone else doesn't deserve that spot. Yet you categorize people and to some extent set people up for rejection. So what would scare me is someone who isn't afraid of rejection. Finally, Vikas hates materialism. That is, he hates that people are obsessed with having stuff. I don't think I need to go much more in depth about this, do I?</p>
+					<p>While Vikas is deathly afraid of that stuff, he also fears things, like <strong>roller coasters</strong>, <strong>change</strong> (to some extent), <strong>the future</strong>, <strong>disappointment</strong>, and the <strong>lack of resources</strong>. It's all stuff that just gives off bad vibes. Vikas also hates stuff. He hates things like <strong>distrespect towards things / people without reason</strong>, <strong></strong>. There's also things that he doesn't like (but doesn't hate, because remember: hate is a strong word!) like <strong>portapotties / unhygenic bathrooms</strong>, <strong>making trivial decisions</strong>, and <strong>internet trolls</strong>.</p>
+					<p>You might have noticed that I'm telling you this stuff really fast. It's because Vikas likes to do stuff he doesn't like quickly. It's so much better to rip off a band-aid then slowly pull it off. So, now I'm going to tell you about stuff that annoys or bothers Vikas. I can only remember 5 for some reason, so here they go: <strong>notable disregard for hygeine</strong>, <strong>ads for pharmaceutical medicines</strong>, <strong>textbook prices</strong>, <strong>people who can't put their phones down</strong>, and <strong>uneven tables</strong>. </p>
+					<p>That's pretty much all of the bad stuff. Oh wait, there's something that he begged me not to tell you, but I'm getting my revenge for him not giving me the ability to have an opinion. Vikas has done a lot of weird and unusual stuff, but the thing that made me want to jump out of his monitor and strangle him was the fact that he once <strong>voluntarily left his foot in a fire ant pile and got hundreds of bites</strong>. Nobody asked him to do it or anything, he was just stupid enough to do it. Sigh. </p>
+					<p>Welp, that's all I have to say about this. Please just move on. I need some time to calm down.</p>
+				</div>
+			</div>
+			<div class="section no-pad-top no-pad-bot" id="fake">
+				<div class="parallax-container valign-wrapper">
+					<h1 class="valign center white-text font-fake">The Ficticious</h1>
+					<div class="parallax"><img src="hogwarts.jpg"></div>
+				</div>
+			</div>
+			<div class="section deep-purple darken-4 white-text flow-text" id="fake-content">
+				<div class="container">
+					<p>Apparently humans like daydreaming, so Vikas made me include this section. I don't like talking about it, but since his wish is my command, here it goes...</p>
+					<p>If Vikas had a genie, he would wish for <strong>a desktop computer (including monitors and other stuff) with 2 dedicated graphics cards, a lot of memory, and a lot of SSD and Mechanical storage space (with failsafes) which came with free upgrades of everything for 30 years</strong>, <strong>a flying car that works</strong>, and <strong>an invisibility cloak</strong>. If he had the means or power to change something, he would <strong>make Americans realize the legislature is more powerful than the president for elections</strong>, <strong>open source everything</strong>, and <strong><em>something</em> that would positively change the course of history</strong>. If he could do something and not have to worry about the consequences, he would <strong>rob a bank for funding</strong>, <strong>release any document that indicted every corrupt executive in the world</strong>, and <strong>go into intelligence agencies and explore the data they have</strong>. If he could do something without failing, he would <strong>quit college and work to make HexR a success (which includes him having enough funds to live)</strong>, <strong>Look for the cure to cancer / something that is creating havoc worldwide</strong>, and <strong>Invent time travel (into the past and the future)</strong></p>
+				</div>
+			</div>
+			<div class="section no-pad-top no-pad-bot" id="end">
+				<div class="parallax-container valign-wrapper">
+					<h1 class="valign center white-text font-fake">The Ficticious</h1>
 					<div class="parallax"><img src="the-end.jpg"></div>
 				</div>
 			</div>
+			<div class="section deep-purple darken-4 white-text flow-text" id="end-content">
+				<div class="container">
+					<p>Apparently humans like daydreaming, so Vikas made me include this section. I don't like talking about it, but since his wish is my command, here it goes...</p>
+					<p>If Vikas had a genie, he would wish for <strong>a desktop computer (including monitors and other stuff) with 2 dedicated graphics cards, a lot of memory, and a lot of SSD and Mechanical storage space (with failsafes) which came with free upgrades of everything for 30 years</strong>, <strong>a flying car that works</strong>, and <strong>an invisibility cloak</strong>. If he had the means or power to change something, he would <strong>make Americans realize the legislature is more powerful than the president for elections</strong>, <strong>open source everything</strong>, and <strong><em>something</em> that would positively change the course of history</strong>. If he could do something and not have to worry about the consequences, he would <strong>rob a bank for funding</strong>, <strong>release any document that indicted every corrupt executive in the world</strong>, and <strong>go into intelligence agencies and explore the data they have</strong>. If he could do something without failing, he would <strong>quit college and work to make HexR a success (which includes him having enough funds to live)</strong>, <strong>Look for the cure to cancer / something that is creating havoc worldwide</strong>, and <strong>Invent time travel (into the past and the future)</strong></p>
+				</div>
+			</div>
 		</main>
-		<footer class="page-footer transparent">
+		<aside id="navigation">
+			<ul id="navi valign-wrapper">
+				<li class="loc valign" data-title="top"><a class="smoothscroll" href="#">•</a></li>
+				<li class="loc valign" data-title="intro"><a class="smoothscroll" href="#introduction">•</a></li>
+				<li class="loc valign" data-title="The Good"><a class="smoothscroll" href="#good">•</a></li>
+				<li class="loc valign" data-title="The Bad"><a class="smoothscroll" href="#bad">•</a></li>
+				<li class="loc valign" data-title="The Ficticious"><a class="smoothscroll" href="#fake">•</a></li>
+				<li class="loc valign" data-title="The End"><a class="smoothscroll" href="#">•</a></li>
+			</ul>
+		</aside>
+		<footer class="page-footer maroon">
+			<h1 class="center white-text">
+				A note from the writer...
+			</h1>
+			<p class="flow-text white-text container"> Hey there! I hope you enjoyed reading my Personal Branding Profile! I put a lot of time to ensure that the content was presented in a unique manner, both through the wording and the presentation. I had a lot of fun writing and coding this, but I do have a few disclaimers: I took none of the pictures, nor made them. The pictures may or may not have copyright limitations to them, but as long as I don't sell this page, I'm not breaking any laws under the fair use clause. I'm using a framework called Materialize to make this presenation, which is licensed as MIT (do whatever you want with it). I don't have access to photoshop, and I am slow at using it, so I did have a friend photoshop the pictures (like the one of my face). All of the words were produced by me, although I got a little bit of inspiration from the internet (I didn't, however, plagiarize anything). I felt it was best to categorize the questions because it makes them more entertaing to read and answer. I'm aware that I didn't answer the questions relating to this course, but that's because it doesn't fit with the theme. Here are the answers: I took this course because <strong>it's UCC and I need the credit</strong>, <strong>to further my creativity skills</strong>, and <strong>to become a more functional member of society</strong>. I don't have many expectations for this course, so I would be happy to have taken it if I <strong>get to meet / interact with new people</strong>, <strong>learn <em>something</em> about creativity</strong>, and <strong>enjoy the (presentation of the) content</strong>.</p>
 			<div class="footer-copyright">
 				<div class="container center red-text">Created by Vikas Potluri for ENDS 101 Personal Branding Profile (Fall, 2016). Unauthorized reproduction is prohibited. <a href="https://www.github.com/vikaspotluri123/vikaspotluri123.github.io/tree/master/pbp" target="_blank">Source</a></div>
 			</div>
@@ -59,60 +230,15 @@
 		<script type="text/javascript" src="material.js"></script>
 		<script type="text/javascript" defer>
 				$(document).ready(function(){
-					$(".button-collapse").sideNav();
+					$("#intro p").removeClass("hide").addClass("bounce");
+					$("a.smoothscroll").click(function(e)
+					{
+						e.preventDefault();
+						$('html, body').animate({
+							scrollTop: $($(this).attr("href")).offset().top
+						}, 1000);
+					});
 					$(".parallax").parallax();
-					$("#modal-1").leanModal();
-					$("#modal-2").leanModal();
-					$("#modal-3").leanModal();
-					if ($(window).width() < 922) $('.section .row').removeClass('hide').addClass('center');
-					$("a[href=#topics]").click(function(e)
-					{
-						e.preventDefault();
-						$('html, body').animate({scrollTop: $("#topics").offset().top - 100}, 2000);
-						$(".button-collapse").sideNav("hide")
-					});
-					$("a[href=#resources]").click(function(e)
-					{
-						e.preventDefault();
-						$('html, body').animate({scrollTop: $("#resources").offset().top - 100}, 2000);
-						$(".button-collapse").sideNav("hide")
-					});
-					$("a[href=#energy]").click(function(e)
-					{
-						e.preventDefault();
-						$('html, body').animate({scrollTop: $("#energy").offset().top - 100}, 2000);
-						$(".button-collapse").sideNav("hide")
-					});
-					$("a[href=#geography]").click(function(e)
-					{
-						e.preventDefault();
-						$('html, body').animate({scrollTop: $("#geography").offset().top - 100}, 2000);
-						$(".button-collapse").sideNav("hide")
-					});
-					$("a[href=#time]").click(function(e)
-					{
-						e.preventDefault();
-						$('html, body').animate({scrollTop: $("#time").offset().top - 100}, 2000);
-						$(".button-collapse").sideNav("hide")
-					});
-					$("a[href=#conditions]").click(function(e)
-					{
-						e.preventDefault();
-						$('html, body').animate({scrollTop: $("#conditions").offset().top - 100}, 2000);
-						$(".button-collapse").sideNav("hide")
-					});
-					$("a[href=#benefits]").click(function(e)
-					{
-						e.preventDefault();
-						$('html, body').animate({scrollTop: $("#benefits").offset().top - 100}, 2000);
-						$(".button-collapse").sideNav("hide")
-					});
-					$("a[href=#questions]").click(function(e)
-					{
-						e.preventDefault();
-						$('html, body').animate({scrollTop: $("#questions").offset().top - 100}, 2000);
-						$(".button-collapse").sideNav("hide")
-					});
 				});
 			</script>
 	</div>
