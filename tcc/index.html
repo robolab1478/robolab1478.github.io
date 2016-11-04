@@ -133,9 +133,31 @@
 				display:inherit !important;
 				visibility:hidden;
 			}
+			#audioToggle
+			{
+				position:fixed;
+				top:25px;
+				left:25px;
+				width:25px;
+				height:25px;
+				cursor:pointer;
+				color:white;
+				z-index:1000000;
+				background:rgba(0,0,0,0.8);
+				transition:all 0.2s ease-in-out;
+			}
+			#audioToggle:hover
+			{
+				background:white;
+				color:black;
+			}
 		</style>
 	</head>
 	<body class="maroon">
+		<audio id="background-music" preload autoplay><source src="./music.mp3" type="audio/mpeg"></audio>
+		<div id="audioToggle">
+			<i class="material-icons">volume_up</i>
+		</div>
 		<header>
 			<div class="section no-pad-bot scrollspy" id="intro">
 				<h1 class="white-text center stroked">
@@ -164,7 +186,7 @@
 					<p><strong>iPREVENT</strong> is aimed at reducing the need of the <a href="https://www.epipen.com/" target="_blank" class="lime-text text-accent-4">EpiPen</a>. Capitalism has taken over the brains of <a href="http://www.mylan.com/" target="_blank" class="lime-text text-accent-4">Mylan</a>, so they're charging outstanding prices for these life-changing pens. The problem with EpiPens is there a one-and-done tool - once you use it once, you <em>have</em> to buy another one! The goal of iPREVENT is simple - reduce the number of times you need to use an EpiPen. Our idea is engineered to be simple - take a drop of our specially formulated non-toxic allergen indicator, and place it in / on a food item that you're worried could allergen. Based on the presence of the allergen, it will change colors, using the universal red is bad and green is good color scheme. iPREVENT helps people with allergies have a peace of mind. We understand that there's a lot of risk for people with food allergies when eating food that <em>you</em> haven't prepared. Other people don't make food with your allergies in mind, or they don't know what to use in replacement of it. With iPREVENT, we want to give you the freedom to enjoy food, without worrying something terrible's going to happen.</p>
 					<p>You might have heard of <a href="http://newsroom.ucla.edu/releases/ucla-engineering-researchers-test-241465" target="_blank" class="lime-text text-accent-4">iTube</a>, which is similar to the concept of iPREVENT. However, iTube and iPREVENT are nothing alike. iPREVENT is designed to be simple, but more importantly, <em>fast</em> and <em>easy</em>. iTube claims to be able to determine the presence of allergens in <em>20 minutes</em>, with a long list of things to do (including using <abbr title="Artificial Intelligence">AI</abbr> to determine if an allergen is present)! Our goal is to produce a product that can tell you in seconds, <em>and</em> to be extremely simple - drop it on your food, wait and see. </p>
 					<p>We plan on using $7500 of the $20,000 we want to raise for iPREVENT. This will give us access to some of the leading scientists and product developers throughout the United States, as well as the capital required to produce the first batch of this preventative serum.</p>
-					<p>We've made an <button class="btn waves-effect modal-open modal-trigger center lime darken-3" href="#video" id="video-trigger">Elevator Pitch</button> and <a href="http://ideamache.ecologylab.net/v/gtzzZhYUAo/" class="lime-text text-accent-4" target="_blank">ideaMÂCHÉ</a>for iPREVENT!</p>
+					<p>We've made an <button class="btn waves-effect modal-open modal-trigger center lime darken-3" href="#video" id="video-trigger">Elevator Pitch</button> and <a href="http://ideamache.ecologylab.net/v/gtzzZhYUAo/" class="lime-text text-accent-4" target="_blank">ideaMÂCHÉ</a> for iPREVENT!</p>
 				</div>
 			</div>
 			<div class="section no-pad-top no-pad-bot scrollspy" id="process">
@@ -179,7 +201,7 @@
 					<img src="notequest.png" class="materialboxed responsive-img" alt="NoteQuest - it's a process" width="100%" data-caption="NoteQuest - How it makes a difference"/>
 					<p>NoteQuest isn't the first tool like this in the industry. There are sites such as StudyBlue and Quizlet that let you make flashcards, which are, in the end the most important things you need to know for class. There is also a site called OneClass that does something similar. However, OneClass is highly criticized for accepting low quality submissions. NoteQuest is different, because the membership fee ensures that only the highest quality notes are available to our members.</p>
 					<p>We plan on spending $4500 of the $20,000 we want to raise for NoteQuest. This will give us access to the developers needed to create the website and apps, as well as hosting and getting the first set of notes uploaded.</p>
-					<p>We've made an <a href="http://ideamache.ecologylab.net/v/3aTHJJY7hd/" class="lime-text text-accent-4" target="_blank">ideaMÂCHÉ</a>for NoteQuest!</p>
+					<p>We've made an <a href="http://ideamache.ecologylab.net/v/3aTHJJY7hd/" class="lime-text text-accent-4" target="_blank"> ideaMÂCHÉ</a>for NoteQuest!</p>
 				</div>
 			</div>
 			<div class="section no-pad-top no-pad-bot scrollspy" id="service">
@@ -194,7 +216,7 @@
 					<img src="spotswap.png" class="materialboxed responsive-img" alt="Spot Swap flowchart" width="100%" data-caption="How SpotSwap works"/>
 					<p>Spot Swap is a free valet service. We're able to provide it freely by having a person with a need (a parking spot) do something (give you a ride) in exchange for it. It's what used to be called bartering!</p>
 					<p>We plan on spending $8000 of the $20,000 we want to raise for Spot Swap. This will cover the cost of hosting, as well as the developers to create the matching algorithm and provide the features.</p>
-					<p>We've made an <a href="http://ideamache.ecologylab.net/v/fGvlSPhrHS/" class="lime-text text-accent-4" target="_blank">ideaMÂCHÉ</a>for Spot Swap!</p>
+					<p>We've made an <a href="http://ideamache.ecologylab.net/v/fGvlSPhrHS/" class="lime-text text-accent-4" target="_blank"> ideaMÂCHÉ</a>for Spot Swap!</p>
 				</div>
 			</div>
 			<div class="section no-pad-top no-pad-bot scrollspy" id="business">
@@ -250,8 +272,8 @@
 					dismissible: true, // Modal can be dismissed by clicking outside of the modal
 					in_duration: 300, // Transition in duration
 					out_duration: 200, // Transition out duration
-					ready:function(){try{player.playVideo()}catch(e){}},
-					complete:function(){try{player.pauseVideo()}catch(e){}}
+					ready:function(){try{audioPause();player.playVideo();}catch(e){}},
+					complete:function(){try{audioPlay();player.pauseVideo();}catch(e){}}
 				});
 				$(".parallax").parallax();
 				var o = 
@@ -266,6 +288,37 @@
 				$(window).scroll();
 				//$("#vid").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/p-lMvj0YdLM" frameborder="0" allowfullscreen></iframe>');
 			});
+			window.shouldPlay = true;
+			$("#audioToggle").click(function()
+			{
+				if(isPlaying())
+				{
+					shouldPlay = false;
+					audioPause();
+				}
+				else
+				{
+					shouldPlay = true;
+					audioPlay();
+				}
+			});
+			function audioPlay()
+			{
+				if(shouldPlay)
+				{
+					document.getElementById("background-music").play();
+					$("#audioToggle i").html("volume_up");
+				}
+			}
+			function isPlaying()
+			{
+				return !document.getElementById("background-music").paused;
+			}
+			function audioPause()
+			{
+				document.getElementById("background-music").pause();
+				$("#audioToggle i").html("volume_off");
+			}
 			var tag = document.createElement('script');
 			tag.src = "https://www.youtube.com/iframe_api";
 			var firstScriptTag = document.getElementsByTagName('script')[0];
