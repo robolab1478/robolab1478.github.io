@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Personal Branding Profile - Vikas Potluir</title>
+		<meta name="robots" content="noindex, nofollow" />
+		<meta name='language' content='english' />
+		<meta name='author' content='Vikas Potluri' />
+		<meta name='viewport' content="width=device-width, initial-scale=1.0">
+		<meta name='HandheldFriendly' content='true' />
+		<meta charset='UTF-8' />
+		<link rel="stylesheet" href="material.css" type="text/css" />
+		<link rel="stylesheet" href="animate.css" type="text/css" />
+		<script type="text/javascript" src="jquery.js"></script>
+		<style>
+			body {
+			display: flex;
+			min-height: 100vh;
+			flex-direction: column;
+			}
+			main {flex: 1 0 auto}
+			h1.stroked
+			{
+				z-index:3;
+				position:relative;
+				width:99vw;
+				-webkit-text-stroke: 1px black;
+			   text-shadow:
+				   3px 3px 0 #500000,
+				 -1px -1px 0 #500000,
+				  1px -1px 0 #500000,
+				  -1px 1px 0 #500000,
+				   1px 1px 0 #500000;
+			}
+			#intro
+			{
+				height:100vh;
+				background-image:url(background.png);
+				background-size:cover;
+				background-position:center;
+				background-attachment:fixed;
+				background-repeat:no-repeat;
+			}
+			#intro p
+			{
+				position:absolute;
+				margin:0 auto;
+				bottom:50px;
+				margin-left:2vw;
+				width:95vw;
+				overflow-y:hidden;
+				z-index:1;
+			}
+			#intro h1
+			{
+				-webkit-text-stroke: 1px black;
+				text-shadow:
+					3px 3px 0 #500000,
+					-1px -1px 0 #500000,  
+					1px -1px 0 #500000,
+					-1px 1px 0 #500000,
+					1px 1px 0 #500000;
+			}
+			h1.title
+			{
+				width:100vw;
+			}
+			.section-content
+			{
+				min-height:80vh;
+			}
+			.delay-by-one
+			{
+				-webkit-animation-delay:1s;
+				animation-delay:1s
+			}
+			.maroon-text
+			{
+				color:#500000 !important
+			}
+			.maroon
+			{
+				background:#500000 !important
+			}
+			.justify
+			{
+				text-align:justify
+			}
+			#navigation
+			{
+				position:fixed;
+				top:45%;
+				right:15px;
+				z-index:100;
+			}
+			#navigation li
+			{
+				font-size:32px;
+				height:25px;
+				text-align:right
+			}
+			#navigation li:hover:before
+			{
+				content:attr(data-title);
+				font-size:12px;
+				color:white;
+				position:absolute;
+				right:15px;
+				margin-top:15px;
+				width:200px;
+			}
+			footer.page-footer .footer-copyright
+			{
+				background-color: rgba(0,0,0,0.2) !important;
+			}
+		</style>
+	</head>
+	<body class="maroon">
+		<header>
+			<div class="section no-pad-bot" id="intro">
+				<h1 class="white-text center">
+					HOWDY!
+				</h1>
+				<p class="black-text center animated delay-by-one hide flow-text hoverable">
+					{{SHORT_TEAM_INTRO}} We're <em>THE REAL BEDTIME CHAMPS</em>...
+				</p>
+			</div>
+		</header>
+		<main>
+			<div class="section blue darken-4 white-text" id="introduction">
+				<div class="container flow-text justify">
+					{{INTRODUCTION_TEXT}}
+				</div>
+			</div>
+			<div class="section no-pad-top no-pad-bot" id="product">
+				<div class="parallax-container valign-wrapper">
+					<h1 class="valign center black-text title">Product</h1>
+					<div class="parallax"><img src="product.jpg"></div>
+				</div>
+			</div>
+			<div class="section green darken-1 section-content" id="product-content">
+				<div class="container flow-text maroon-text">
+				</div>
+			</div>
+			<div class="section no-pad-top no-pad-bot" id="process">
+				<div class="parallax-container valign-wrapper">
+					<h1 class="valign center black-text title">Process</h1>
+					<div class="parallax"><img src="process.jpg"></div>
+				</div>
+			</div>
+			<div class="section grey darken-4 flow-text white-text section-content" id="process-content">
+				<div class="container">
+				</div>
+			</div>
+			<div class="section no-pad-top no-pad-bot" id="service">
+				<div class="parallax-container valign-wrapper">
+					<h1 class="valign center black-text title">Service</h1>
+					<div class="parallax"><img src="service.jpg"></div>
+				</div>
+			</div>
+			<div class="section purple darken-4 white-text flow-text section-content" id="service-content">
+				<div class="container">
+
+				</div>
+			</div>
+			<div class="section no-pad-top no-pad-bot" id="business">
+				<div class="parallax-container valign-wrapper">
+					<h1 class="valign center black-text title">Business Model</h1>
+					<div class="parallax"><img src="business.jpg"></div>
+				</div>
+			</div>
+			<div class="section brown darken-4 white-text flow-text section-content" id="business-content">
+				<div class="container">
+				</div>
+			</div>
+			<div class="section no-pad-top no-pad-bot" id="pitch">
+				<div class="parallax-container valign-wrapper">
+					<h1 class="valign center black-text title">Elevator Pitch</h1>
+					<div class="parallax"><img src="pitch.jpg"></div>
+				</div>
+			</div>
+			<div class="section blue-grey darken-4 white-text flow-text section-content" id="pitch-content">
+				<div class="container">
+				</div>
+			</div>
+		</main>
+		<aside id="navigation">
+			<ul id="navi valign-wrapper">
+				<li class="loc valign" data-title="top"><a class="smoothscroll" href="#intro">•</a></li>
+				<li class="loc valign" data-title="Introduction"><a class="smoothscroll" href="#introduction">•</a></li>
+				<li class="loc valign" data-title="Product Innovation"><a class="smoothscroll" href="#product">•</a></li>
+				<li class="loc valign" data-title="Service Innovation"><a class="smoothscroll" href="#service">•</a></li>
+				<li class="loc valign" data-title="Process Innovation"><a class="smoothscroll" href="#process">•</a></li>
+				<li class="loc valign" data-title="Business Model"><a class="smoothscroll" href="#business">•</a></li>
+				<li class="loc valign" data-title="Elevator Pitch"><a class="smoothscroll" href="#pitch">•</a></li>
+				<li class="loc valign" data-title="A Note..."><a class="smoothscroll" href="#footer">•</a></li>
+			</ul>
+		</aside>
+		<footer class="page-footer maroon" id="footer">
+			<h1 class="center white-text">
+				A note from the writer...
+			</h1>
+			<p class="flow-text white-text container">{{EDITORS_NOTES}}</p>
+			<div class="footer-copyright">
+				<div class="container center red-text">Code created by Vikas Potluri for ENDS 101 Team Creativity Challenge (Fall, 2016). Unauthorized reproduction is prohibited. <a href="https://www.github.com/vikaspotluri123/vikaspotluri123.github.io/tree/master/tcc" target="_blank">Source</a></div>
+			</div>
+		</footer>
+	</body>
+	<div id="scripts" class="hide">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="material.js"></script>
+		<script type="text/javascript" defer>
+				$(document).ready(function(){
+					$("#intro p").removeClass("hide").addClass("bounce");
+					$("a.smoothscroll").click(function(e)
+					{
+						e.preventDefault();
+						$('html, body').animate({
+							scrollTop: $($(this).attr("href")).offset().top
+						}, 1000);
+					});
+					$(".parallax").parallax();
+				});
+			</script>
+	</div>
+</html>
