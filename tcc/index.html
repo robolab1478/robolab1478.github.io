@@ -250,6 +250,8 @@
 					dismissible: true, // Modal can be dismissed by clicking outside of the modal
 					in_duration: 300, // Transition in duration
 					out_duration: 200, // Transition out duration
+					ready:function(){try{player.playVideo()}catch(e){}},
+					complete:function(){try{player.pauseVideo()}catch(e){}}
 				});
 				$(".parallax").parallax();
 				var o = 
@@ -262,8 +264,20 @@
 				];
 				Materialize.scrollFire(o);
 				$(window).scroll();
-				$("#vid").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/p-lMvj0YdLM" frameborder="0" allowfullscreen></iframe>');
+				//$("#vid").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/p-lMvj0YdLM" frameborder="0" allowfullscreen></iframe>');
 			});
+			var tag = document.createElement('script');
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			var player;
+			function onYouTubeIframeAPIReady() {
+					player = new YT.Player('vid', {
+					height: '390',
+					width: '640',
+					videoId: 'p-lMvj0YdLM',
+				});
+			}
 		</script>
 	</div>
 </html>
