@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Final Individual Reflection Essay (FIRE) - ENDS 101</title>
+		<meta name="robots" content="noindex, nofollow" />
+		<meta name='language' content='english' />
+		<meta name='author' content='Vikas Potluri' />
+		<meta name='viewport' content="width=device-width, initial-scale=1.0">
+		<meta name='HandheldFriendly' content='true' />
+		<meta charset='UTF-8' />
+		<link rel="stylesheet" href="material.css" type="text/css" />
+		<link rel="stylesheet" href="animate.css" type="text/css" />
+		<script type="text/javascript" src="jquery.js"></script>
+		<style>
+			body {
+			display: flex;
+			min-height: 100vh;
+			flex-direction: column;
+			}
+			main {flex: 1 0 auto}
+			.stroked
+			{
+				-webkit-text-stroke: 1px black;
+				text-shadow:
+					3px 3px 0 #500000,
+					-1px -1px 0 #500000,
+					1px -1px 0 #500000,
+					-1px 1px 0 #500000,
+					1px 1px 0 #500000;
+			}
+			h1.stroked
+			{
+				position:relative;
+				width:99vw;
+			}
+			#intro
+			{
+				height:100vh;
+				background-image:url(fire.jpg);
+				background-size:cover;
+				background-position:center;
+				background-attachment:fixed;
+				background-repeat:no-repeat;
+			}
+			#intro p
+			{
+				position:absolute;
+				margin:0 auto;
+				bottom:50px;
+				margin-left:2vw;
+				width:95vw;
+				overflow-y:hidden;
+				z-index:1;
+			}
+			h1.title
+			{
+				width:100vw;
+			}
+			.delay-by-one
+			{
+				-webkit-animation-delay:1s;
+				animation-delay:1s
+			}
+			.maroon-text
+			{
+				color:#500000 !important
+			}
+			.maroon
+			{
+				background:#500000 !important
+			}
+			.justify
+			{
+				text-align:justify
+			}
+			#navigation
+			{
+				position:fixed;
+				top:45%;
+				right:15px;
+				z-index:100;
+			}
+			#navigation li a.active
+			{
+				color:red;
+			}
+			#navigation li
+			{
+				font-size:32px;
+				height:25px;
+				text-align:right
+			}
+			#navigation li:hover:before
+			{
+				content:attr(data-title);
+				font-size:12px;
+				color:white;
+				position:absolute;
+				right:15px;
+				margin-top:15px;
+				width:200px;
+			}
+			footer.page-footer .footer-copyright
+			{
+				background-color: rgba(0,0,0,0.2) !important;
+			}
+			h1.free-me
+			{
+				margin:0
+			}
+			a[href]:not(.no-help)
+			{
+				text-decoration: none;
+				border-bottom: 0px solid transparent;
+				transition: 0.25s ease;
+				width
+			}
+			a[href]:hover:not(.no-help)
+			{
+				border-bottom: 2px solid #76ff03 ;
+			}
+			.hide
+			{
+				display:inherit !important;
+				visibility:hidden;
+			}
+			#audioToggle
+			{
+				position:fixed;
+				top:25px;
+				left:25px;
+				width:25px;
+				height:25px;
+				cursor:pointer;
+				color:white;
+				z-index:1000000;
+				background:rgba(0,0,0,0.8);
+				transition:all 0.2s ease-in-out;
+			}
+			#audioToggle:hover
+			{
+				background:white;
+				color:black;
+			}
+		</style>
+	</head>
+	<body class="maroon">
+		<audio id="background-music" preload autoplay loop><source src="./music.m4a" type="audio/mpeg"></audio>
+		<div id="audioToggle">
+			<i class="material-icons">volume_up</i>
+		</div>
+		<header>
+			<div class="section no-pad-bot scrollspy" id="intro">
+				<h1 class="white-text center stroked">
+					HOWDY!
+				</h1>
+				<p class="white-text center animated delay-by-one hide flow-text hoverable stroked">
+					<strong>My name is Vikas Potluri, I'm a Biomedical Engineering Major from Austin, Texas, but most importantly, I'm THE loudest, and THE proudest member of the Fightin' Texas Aggie Class of 2020! I'm in ENDS Team 26 (The Real Bedtime Champs), and as an Aggie, I do not lie, cheat steal, or tolerate those who do. Thus, this assignment is all my own work.</strong>
+				</p>
+			</div>
+		</header>
+		<main>
+			<div class="section brown darken-4 white-text scrollspy" id="introduction">
+				<div class="container flow-text justify animate-me hide">
+					<h1 class="center free-me">Introduction</h1>
+					<p>I had a lot of self reflection as I wrote this. I think you'll find my feedback on my past, future and this course to be enlightening. I wrote this first, and the word count on the document was ~ 3060 words.</p>
+				</div>
+			</div>
+			<div class="section no-pad-top no-pad-bot scrollspy" id="past">
+				<div class="parallax-container valign-wrapper">
+					<h1 class="valign center white-text title stroked">Reflection of the Past</h1>
+					<div class="parallax"><img src="past.jpg"></div>
+				</div>
+			</div>
+			<div class="section blue darken-4 section-content " id="past-content">
+				<div class="container flow-text white-text justify animate-me hide">
+					<p class='flow-text'>I went into this course not expecting too much. However, now that it’s been almost a semester, I can say that I learned some stuff, but a lot of what I learned was really an extension to what I already know, or I viewed said stuff in a new perspective. With that in mind, I definitely learned some things that I found eye opening, which especially impacted me.</p>
+					<p class='flow-text'>One of the most impactful and “deep” things that really hit me hard is the idea that we can work alone, but the real work gets done with teamwork. The lectures relating this to me literally changed the way I work. See, I run an organization (HexR), and during my high school career, I spent a good portion of my time doing robotics. The thing about robotics, is we were forced to be in a team, and work with the people we may or may not have liked. I didn’t have a problem with this, because I was constantly learning up to the end how to do stuff. HexR, on the other hand, was my mask to be able to do what I love (write websites) without people judging me for my age (I was 15 when it started – who would want to hire a 15-year-old to write a website for them?) using the standards I set. Thus, I was reluctant to add people to my organization, because of their different styles. Thus, for the longest time, I worked individually, and I did a good job at it. However, since my transition to college, I have had less time to do work relating to HexR with time constraints and the glory of procrastination. Given what I had learned in the course, I ended up allowing a few of my friends to join in and help me out. It wasn’t until after they started helping me that I understood why we work in teams. While I might be a grandmaster at website development (as visible through the glorious creation you’re reading this on), and I understand the components of design, I am incapable of using photo editing software to create / modify images (also known as graphic design), and images change the way a website is perceived, so when one of the people that works with me showed his ability in graphics, I realized how important the stuff this course teaches about individualism vs teamwork really is. The websites we created increased in quality, from good to great. It wasn’t until I started writing this paragraph that I realized robotics is the same exact thing – our fall competition was split into multiple categories – programming, CAD, prototyping, marketing, exhibit, spirit and presentation – which require different strengths. Even if we weren’t limited in time and resources, it would very difficult for a single person to do all of the work required in each category as well as our team could as a whole. Looking into the future, since I am looking to do product research and development, it is definitely in my best interest to work as a team and learn the requirements to be a good team member so I can work with whoever I end up working with, whether I like them or not, and producing an end result that I can say I’m proud of.</p>
+					<div class="row">
+						<div class='col s6'><img src="alone.jpg" height="300px" alt="being alone" width="100%"></div>
+						<div class='col s6'><img src="together.jpg" height="300px" alt="teamwork" width="100%"></div>
+					</div>
+					<p class='flow-text'>While this class helped me improve HexR in regards to teamwork, it also helped me in something else – business! Once I found a couple of people to work with me, we delved into app development, and we created a platform idea – PlanVIEW – which has the potential to positively impact k-12 students. We gave a presentation to my high school’s district higher-ups, and they said they would be willing to purchase our product – IF we became a business entity and created a terms of feedback. When I heard that, I pulled up the lecture regarding intellectual property (10) and I wrote out the pros and cons of different kinds of incorporation, and we finally made a decision on what would be best for us to do. The different kinds of incorporation can be really confusing, and I know I will be looking back at this lecture over the next few months to make sure that I really made the best decision for what we try to do. The final steps for us are to fill out the tax forms, get a registered agent, incorporate and pay the nonprofit fee! We’re so close, yet so far to becoming a nonprofit. I know I’m going to use the stuff we learned in lecture 10 again – At the moment, I’m thinking of privatizing my research by creating a private research firm, and I’m going to need to know the ins and outs of every step from branching out from your current employer to the types of businesses to paying for rent. I know the different stuff that the lecture covers will be a great help in the future.</p>
+					<div class='col s12'><img src="business.jpg" class='responsive-image' alt="thinking as a business" width="100%"></div>
+					<p class='flow-text'>The final element of the course that really influenced me was all of the stuff related to innovation and imagination. My parents have always told me I have an active imagination, and that I was able to dream up the randomness things using the fewest toys. That made me believe that I am the definition of a creative person. However, once I watched the lectures I realized that I’m only an imaginative person – I have a gift, and I should harness the power it has to do something good – create things that need to be created and innovate things that previously couldn’t be innovated. I know I’ve been relating a lot to HexR, but that’s because HexR is a huge part of me. The stuff I do for it has taught me so much over the past 3 years, and I can always learn something from the stuff I do there. When developing PlanVIEW and working with my team, I used the design future we learned to make sure I created an app that fit the needs of the people. You see, I had been working on an app called StashBoard before I started working on PlanVIEW. StashBoard and PlanVIEW are in essence the same thing, but I wasn’t sure what I was solving with StashBoard. PlanVIEW had a purpose, so we adopted the name and removed StashBoard. However, with the initial release (before we learned about the creative future), PlanVIEW wasn’t that purposeful. After watching the lecture, I realized what I had done wrong with PlanVIEW, and have been doing my best to bring it back to the glory it can have. I wrote my purpose statement out, and have been developing the app to conform to the statement of purpose, rather than create a statement of purpose based on what the app does. I wouldn’t have done that if it hadn’t been for this course, so I am really grateful. I plan on using the creative future in my future endeavors as well. I now realize that a product is useless unless it has value, so if I want to make a product, I need to figure out what value it will bring to society, and then work to make the product conform the value. By doing this, I am way more likely to gain funding for anything that I end up trying to get funding for.</p>
+					<div class='col s12'><img src="imagine.jpg" class='responsive-image' alt="imagination" width="100%"></div>
+					<p class='flow-text'>All in all, while I feel like I didn’t learn a whole lot through this course, I have definitely been influenced in a way that will allow me to produce higher quality products and feedbacks over the course of my life, and I have a better understanding of a variety of different but important aspects in the life of work.</p>
+				</div>
+			</div>
+			<div class="section no-pad-top no-pad-bot scrollspy" id="future">
+				<div class="parallax-container valign-wrapper">
+					<h1 class="valign center white-text title stroked">Reflection of the Future</h1>
+					<div class="parallax"><img src="future.jpg"></div>
+				</div>
+			</div>
+			<div class="section grey darken-4 justify flow-text white-text section-content" id="future-content">
+				<div class="container animate-me hide">
+					<p class='flow-text'>I think my field of study will be greatly influenced by the advent of singularity. I am looking to do biomedical engineering, and with the rate technology is advancing, I can be looking at taking courses basically every year just to understand what has changed in such a short time. With the rate of technological advancement, every field will be influenced and impacted in some way or another, and I am already learning that in web development. The organization I run (HexR) writes and codes apps and websites using the languages of the web. What I have learned over the time that I have been writing websites is that the web is a breathing organism that is constantly being improved. Just recently, the idea of feedback workers, notification, Bluetooth sharing and a plethora of other innovations has been added to browsers. The end goal is to make it possible to create an app solely in the cloud, and have everything the end user is trying to do run virtually, with integration in the different features most modern phones have. I have spent countless hours reading articles and watching videos from huge places, like the Google Chrome Developer channel, codeproject, tech crunch, etc. just to make sure I understand the current technologies. This adds onto the already existing things that we need to know, and it made me realize singularity, while awesome for the end user, will really suck for the developer. We’re going to have to understand everything new, and be able to innovate upon it, within a very short timeframe, because we’re also contributing to singularity. It’s like a positive feedback loop – as technology is created, people want to improve it, and the race to do it becomes shorter and shorter, while the amount of information available becomes more and more, which I feel like will cause the cartoon character’s head to explode if this was a cartoon. </p>
+					<div class='col s12'><img src="overwork.jpg" class='responsive-image' alt="overwork" width="100%"></div>
+					<p class='flow-text'>Getting back to the question, I have 2 answers, since I have 2 fields! In the field of web technology, we’re already constantly morphing with singularity, and I’m enjoying learning about all of the cool stuff I have access to through the APIs that browsers are now creating and supporting. However, in the field of engineering (specifically biomedical), I think while it’s already starting to morph, the way research is done in general will change completely. There will be new technology that makes doing every kind of research much more feasible, and we will be constantly innovating on technologies that are created every day. The field will become more fast paced, and there will be more expectation for what we will produce, which might create problems – what if the testing we did on a product wasn’t enough, and it completely screws someone over? There’s going to be a lot more risk, as well as many more questions, and this is just the beginning. Singularity will change us to a way of life that we would never expect.</p>
+					<div class='col s12'><img src="battle.jpg" class='responsive-image' alt="battle" width="100%"></div>
+					<p class='flow-text'>Now that I’ve talked about how singularity is going to hurt like hell, I should probably talk about how I plan on dealing with it. In my 18.5 years of existence, I have learned to stay out of people’s business, and I’ve also learned that some stuff is going to happen, and it’s best if you just accept it. I think that’s the best approach for singularity. Accept that it’s going to happen, and prepare for the worst that could happen. I will work to stay healthy so I can have the ability to come at singularity head on, because there’s no point in going to battle of you send your weakest forces. The same idea applies here. If I can’t handle singularity right now, it’s going to be much harder to handle it in the future, because according to biology our body fails us over time. What I’m going to do is use HexR to learn how to understand and deal with singularity, which will hopefully help me take the journey to the end.</p>
+					<div class='col s12'><img src="plan.jpg" class='responsive-image' alt="battle plan" width="100%"></div>
+					<p class='flow-text'>All in all, singularity is going to be a burden, but it’s also going to be a blessing. It’s important to understand both aspects of it, and since we’re in a time where singularity is already taking over, I think we should learn to deal with it now so we will be prepared to deal with the worst of it in the future.</p>
+					<div class='col s12'><img src="hard.jpg" class='responsive-image' alt="imagination" width="100%"></div>
+				</div>
+			</div>
+			<div class="section no-pad-top no-pad-bot scrollspy" id="feedback">
+				<div class="parallax-container valign-wrapper">
+					<h1 class="valign center white-text title stroked">Reflection on Motivation and Drive (aka feedback)</h1>
+					<div class="parallax"><img src="feedback.jpg"></div>
+				</div>
+			</div>
+			<div class="section blue-grey darken-4 white-text flow-text section-content justify" id="feedback-content">
+				<div class="container animate-me hide">
+					<p class='flow-text'>When thinking of recommendations for this course, my biggest thought is this is treated like an in class intermediate course, and that’s not what this is.</p>
+					<p class='flow-text'>One of the biggest examples of this is the rubric. The rubric basically says if you followed the instructions, you can get an 80. However, if you step out of your comfort zone and think of some way to wow the TA / instructor, you can get a 100. This might be good for an intermediate class, but for an introductory class, this isn’t worth it. A lot of people are taking this course because it’s a double header – it meets the requirements for the ICD and core curriculum courses. Given this course is that type of course, it’s unreasonable to have an expectation like that. I personally believe following the requirement should denote a 100, but given the obvious belief that you have to work to get your grade, an 85 or 90 is more reasonable as the base. Additionally, judging with creativity is extremely biased, and while you might be able to get rid of most of the bias, there’s still bias, which is unfair to people who are creatively challenged, or have trouble stemming ideas from a single theme. To further this point, I had times in my team discussion where I was drawing blanks, but after submitting the assignment I figured out a way to connect different innovations. It’s not that I was lacking, but it was I was forced to think creatively on the spot, and that’s not how I work best. </p>
+					<div class='col s12'><img src="pressure.jpg" class='responsive-image' alt="pressure" width="100%"></div>
+					<p class='flow-text'>Another area that could be vastly improved is the fact that if you want to discuss your grade, you need to come to the office hours to do so. The reasoning behind this is extremely flawed (well at least the reasons that were pushed). Email is a perfectly viable means of communication, and given the statement in the beginning of the course that we are in an increasingly digital world and we need to adapt to it, this is definitely a step backwards. If there is such a worry about security, there are plenty of open source encryption solutions that integrate into email clients to only allow people that should read the email to read it. The biggest problem I have with it is my living arrangement. I live off campus, and my apartment provides my meals for me. Thus, I am limited to when I can come on campus (and the limit is basically outside of office hours). Even so, the bigger problem is it that discussion of grades would last around 5 minutes, and I would spend 5 times as long travelling than I would learning, so in the end, it’s really difficult for me to come in to office hours. Like I said, email is a perfectly viable and okay means of communication, but I think something better to do would be to incorporate an actual rubric – give us better guidelines on what you’re looking for, and let us know where we were lacking. Actually, by doing that you would probably deal with less students complaining about their grade, because the rubric tells them everything. A great example of this is the websites I develop. I put a lot of time and effort to create them, but you still believe that I only deserved a 95 on it.</p>
+					<div class='col s12'><img src="secure.jpg" class='responsive-image' alt="secure" width="100%"></div>
+					<p class='flow-text'>Another thing I think should be focused on is in the group work. I was fine with the way it went, but it would have been better to incorporate the use of online collaboration tools, like G Suite and Video Conferencing. It would have been nice to have an assignment that had us explore the options available to us, like we did with ideamache, so people would be more aware of the vast holdings the internet contains.</p>
+					<div class='col s12'><img src="hangouts.jpg" class='responsive-image' alt="hangouts" width="100%"></div>
+					<p class='flow-text'>Finally, ideamache is not polished enough to force students to use it. While it’s a good tool, it shouldn’t be forced down our throats to use. In all honesty, it’s an attempt to merge Prezi and PowerPoint together, but it’s still under development and not quite ready to be used. I spent more time trying to use ideamache for I-2, when I could have spent that time connecting the ideas together and making a website that looks 1000x better than ideamache and done better. Yet, I still didn’t get the bonus that you claimed I would get if I did it. There is a much better solution that is open source called slides, and while it’s missing the autolink, that’s something that we could do easily. I might be missing the point of ideamache, but given the fact that I watched the video discussing its use, and I tried multiple times to use it, it’s apparent that ideamache doesn’t give you access to the canvas of creation as much as you think.</p>
+					<p class='flow-text'>That was a lot of negativity, so I’m going to end with saying thank you to both the professor and the TAs. Ya’ll have had decent response times, and honestly that’s all that really matters in the end. I acknowledge that I should have put more effort into communicating with you to improve my grade, but in the limited communication we have had, I have been pleased.</p>
+					<div class='col s12'><img src="tips.jpg" class='responsive-image' alt="tips" width="100%"></div>
+					<p class='flow-text'>If I was to give three tips for success for students to succeed in this course, it would be simple… Start the assignments with plenty of time to spare. While it might be possible to do everything the day before it’s due, the quality isn’t great and it feels rushed. Post on the discussion forums. I took the time to read a lot of the discussion forums, and it was only recently I realized I was holding back on stating my opinion, and I’m not sure why. In the end, I feel like I missed out on some great discussions because of my unwillingness to talk. Finally, go into the course expecting difficulty, but try to enjoy what you’re learning. If you’re going to do something because you have to, do your best to enjoy what you’re learning. This content is actually really interesting and it can really influence you.</p>
+				</div>
+			</div>
+		</main>
+		<aside id="navigation">
+			<ul id="navi valign-wrapper section table-of-contents">
+				<li class="loc valign" data-title="top"><a class="smoothscroll no-help" href="#intro">•</a></li>
+				<li class="loc valign" data-title="Introduction"><a class="smoothscroll no-help" href="#introduction">•</a></li>
+				<li class="loc valign" data-title="past Innovation (task-1)"><a class="no-help smoothscroll" href="#past">•</a></li>
+				<li class="loc valign" data-title="future Innovation (task-2)"><a class="no-help smoothscroll" href="#future">•</a></li>
+				<li class="loc valign" data-title="feedback Innovation (SpotSwap)"><a class="no-help smoothscroll" href="#feedback">•</a></li>
+				<li class="loc valign" data-title="A Note..."><a class="no-help smoothscroll" href="#footer">•</a></li>
+			</ul>
+		</aside>
+		<footer class="page-footer maroon" id="footer">
+			<h1 class="center white-text">
+				A note from writer...
+			</h1>
+			<p class="flow-text white-text container">Hey there! <strong>If any animations don't work, please let me know ASAP so I can email you the PDF version of this!</strong>I put a lot of time to ensure that the content was presented in a unique manner, both through the wording and the presentation. I had a lot of fun writing and coding this, but I do have a few disclaimers: I took none of the pictures, nor made them. The pictures may or may not have copyright limitations to them, but as long as I don't sell this page, I'm not breaking any laws under the fair use clause. I'm using a framework called Materialize to make this presenation, which is licensed as MIT (do whatever you want with it).<br/><br/></p>
+			<div class="footer-copyright">
+				<div class="container center red-text">Code created by Vikas Potluri for ENDS 101 FIRE (Fall, 2016). Unauthorized repastion is prohibited. <a href="https://www.github.com/vikaspotluri123/vikaspotluri123.github.io/tree/master/fire" target="_blank">Source</a></div>
+			</div>
+		</footer>
+	</body>
+	<div id="scripts" class="hide">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="material.js"></script>
+		<script type="text/javascript" defer>
+			$(document).ready(function(){
+				$("#intro p").removeClass("hide").addClass("bounce");
+				$("a.smoothscroll").click(function(e)
+				{
+					e.preventDefault();
+					$('html, body').animate({
+						scrollTop: $($(this).attr("href")).offset().top
+					}, 1000);
+				});
+				$('.scrollspy').scrollSpy();
+				$(".parallax").parallax();
+				var o =
+				[
+					{selector: '#introduction', offset: 250, callback: function(){$("#introduction").children().addClass("animated zoomIn").removeClass("hide")}},
+					{selector: '#past-content', offset: 250, callback: function(){$("#past-content").children().addClass("animated bounceIn").removeClass("hide")}},
+					{selector: '#future-content', offset: 250, callback: function(){$("#future-content").children().addClass("animated lightSpeedIn").removeClass("hide")}},
+					{selector: '#feedback-content', offset: 250, callback: function(){$("#feedback-content").children().addClass("animated slideInUp").removeClass("hide")}},
+					{selector: '#business-content', offset: 250, callback: function(){$("#business-content").children().addClass("animated fadeIn").removeClass("hide")}},
+				];
+				Materialize.scrollFire(o);
+				$(window).scroll();
+				window.shouldPlay = true;
+				$("#audioToggle").click(function()
+				{
+					if(isPlaying())
+					{
+						shouldPlay = false;
+						audioPause();
+					}
+					else
+					{
+						shouldPlay = true;
+						audioPlay();
+					}
+				});
+				function audioPlay()
+				{
+					if(shouldPlay)
+					{
+						document.getElementById("background-music").play();
+						$("#audioToggle i").html("volume_up");
+					}
+				}
+				function isPlaying()
+				{
+					return !document.getElementById("background-music").paused;
+				}
+				function audioPause()
+				{
+					document.getElementById("background-music").pause();
+					$("#audioToggle i").html("volume_off");
+				}
+			});
+		</script>
+	</div>
+</html>
