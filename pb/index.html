@@ -31,6 +31,7 @@
 			.red{color:red !important;}
 			ul.small li{font-size:75%;}
 			#thot{display:none; font-size:250%;}
+			#thot.small{font-size:100%;}
 			.show{display:inline-block !important;}
 		</style>
 	</head>
@@ -216,9 +217,19 @@
 			});
 			Reveal.addEventListener( 'slidechanged', function( event ) {
 				if(event.indexh == 4)
-					setTimeout(function(){document.getElementById('thot').className += ' show';},1500);
+					setTimeout(function()
+					{
+						document.getElementById('thot').className += ' show';
+						setTimeout(function()
+						{
+						document.getElementById('thot').className += ' small';
+						});
+					},1500);
 				else
+				{
 					document.getElementById("thot").className = document.getElementById("thot").className.replace( /(?:^|\s)show(?!\S)/g , '' )
+					document.getElementById("thot").className = document.getElementById("thot").className.replace( /(?:^|\s)small(?!\S)/g , '' )
+				}
 			});
 			setInterval(function()
 			{
