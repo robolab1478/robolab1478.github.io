@@ -25,14 +25,14 @@
 			.reveal .controls .navigate-left{left:-1;}
 			.viewport td,.viewport th{color:#FFF !important;}
 			#forever{ position:relative; bottom:400px; height:300px; z-index: -1; float:right;}
-			.reveal section{height:100vh}
+			.reveal section:not('.intro'){height:100vh}
 			#pellet{float:right; z-index:-1; width:550px;}
 		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
+				<section class='intro'>
 					<h1 class="center">Plastic</h1>
 					<h3 class="center">Handle with care, plastic is everywhere</h3>
 					<h5 class="center">A <em>commentary</em> by Ben & Vikas</h5>
@@ -93,6 +93,19 @@
 					</ul>
 					<img id="forever" src="forever.jpg" alt='Forever plastics' />
 				</section>
+				<section>
+					<h1 class='center'>Water Bottle Production</h1>
+					<ol>
+						<li>Dimethyl terephthalate and ethylene glycol react to form bis-(-hydroxyethyl) terephthalate (BHET) and methanol
+							<ul>
+								<li>Methanol boils off at reaction temperature (~220-260°C)</li>
+							</ul>
+						</li>
+						<li>BHET is further heated, where it undergoes a condensation reaction to form PET polymer</li>
+					</ol>
+					<img src='production.jpg' height="50%" alt="Prodction of plastic water bottles" />
+				</section>
+				<section id='end' data-background="error.jpg"></section>
 			</div>
 		</div>
 		<script src="reveal.js"></script>
