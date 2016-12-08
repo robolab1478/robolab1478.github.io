@@ -30,6 +30,8 @@
 			.right{float:right;}
 			.red{color:red !important;}
 			ul.small li{font-size:75%;}
+			#thot{display:none;}
+			.show{display:inline-block !important;}
 		</style>
 	</head>
 	<body>
@@ -70,31 +72,35 @@
 					</ul>
 				</section>
 				<section>
-					<h1>Case Study</h1>
-					<h3>The Humble Water Bottle</h3>
-					<ul>
-						<li>Water Bottles are made of Polyethylene Terephthalate (PET)</li>
-						<li>
-							Advantages
-							<ul>
-								<li>Durable & Resistant to variety of conditions (heat, cold, wear, abrasion, chemicals)</li>
-								<li>Can come in a <a style='color:red'>v</a><a style='color:orange'>a</a><a style='color:yellow'>r</a><a style='color:green'>i</a><a style='color:lightblue'>e</a><a style='color:magenta'>t</a><a style='color:cyan'>y</a> <a style='color:red'>o</a><a style='color:orange'>f</a> <a style='color:yellow'>c</a><a style='color:green'>o</a><a style='color:lightblue'>l</a><a style='color:magenta'>o</a><a style='color:red'>r</a><a style='color:cyan'>s</a></li>
-								<li>Recyclable</li>
-								<li>Supporters: Recycling companies, people who live in bad cities</li>
-							</ul>
-						</li>
-						<li>
-							Disadvanges
-							<ul>
-								<li>Shouldn’t be used multiple times</li>
-								<li>Not biodegradable</li>
-								<li>Recyclable</li>
-								<li>Monomers leftover (queue next slide)</li>
-								<li>Supporters:[educated] environmentalists, reusable bottle companies</li>
-							</ul>
-						</li>
-					</ul>
-					<img id="forever" src="forever.jpg" height="35%" alt='Forever plastics' />
+					<section>
+						<h1>Case Study</h1>
+						<h3>The Humble Water Bottle</h3>
+						<ul>
+							<li>Water Bottles are made of Polyethylene Terephthalate (PET)</li>
+							<li>
+								Advantages
+								<ul>
+									<li>Durable & Resistant to variety of conditions (heat, cold, wear, abrasion, chemicals)</li>
+									<li>Can come in a <a style='color:red'>v</a><a style='color:orange'>a</a><a style='color:yellow'>r</a><a style='color:green'>i</a><a style='color:lightblue'>e</a><a style='color:magenta'>t</a><a style='color:cyan'>y</a> <a style='color:red'>o</a><a style='color:orange'>f</a> <a style='color:yellow'>c</a><a style='color:green'>o</a><a style='color:lightblue'>l</a><a style='color:magenta'>o</a><a style='color:red'>r</a><a style='color:cyan'>s</a></li>
+									<li>Recyclable</li>
+									<li>Supporters: Recycling companies, people who live in bad cities</li>
+								</ul>
+							</li>
+							<li>
+								Disadvanges
+								<ul>
+									<li>Shouldn’t be used multiple times</li>
+									<li>Not biodegradable</li>
+									<li>Recyclable</li>
+									<li>Monomers leftover (queue next slide)</li>
+									<li>Supporters:[educated] environmentalists, reusable bottle companies</li>
+								</ul>
+							</li>
+						</ul>
+						<img id="forever" src="forever.jpg" height="35%" alt='Forever plastics' />
+					</section>
+					<section data-background="woah.gif" data-transition='fadein'></section>
+					<section data-background="other.gif" data-transition='fadein'></section>
 				</section>
 				<section>
 					<h1 class='center'>Water Bottle Production</h1>
@@ -110,7 +116,7 @@
 				</section>
 				<section>
 					<h1 class='center'>Monomers and You</h1>
-					<h3 class='center'>How monomers interact with your body</h3>
+					<h3 class='center'>How monomers interact with your body <span id='thot'>💭</span></h3>
 					<img src='and-you.jpg' class='right' height="30%" alt='Monomers and you' />
 					<ul>
 						<li>Dimethyl terephthalate
@@ -199,6 +205,12 @@
 				maxScale: 1,
 				transition:'zoom',
 				history:1
+			});
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				if(event.indexh == 4)
+					setTimeout(function(){document.getElementById('thot').className += ' show';},1500);
+				else
+					document.getElementById("thot").className = document.getElementById("thot").className.replace( /(?:^|\s)show(?!\S)/g , '' )
 			});
 			setInterval(function()
 			{
