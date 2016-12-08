@@ -1,55 +1,103 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="reveal.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/theme/black.min.css">
-        <link rel="stylesheet" href="paper.css">
-        <link rel="stylesheet" href="print.css" media='print'>
-        <style>
-        	.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6
-        	{
-        		font-weight:inherit
-        	}
-        </style>
-    </head>
-    <body>
-        <div class="reveal">
-            <div class="slides">
-                <section>
-                	<h1>Plastic</h1>
-                	<h3>Handle with care, plastic is everywhere</h3>
-                	<h5>A <em>commentary</em> by Ben & Vikas</h5>
-                </section>
-                <section>
-                	<h1>Introduction</h1>
-                	<h3>What are <em>Plastics</em></h3>
-                	<ul>
-                		<li>
-                			Synthetic goodness made from organic compounds
-                			<ul>
-                				<li>Derived from petrochemicals</li>
-                				<li>Some are fully organic</li>
-                			</ul>
-                		</li>
-                		<li>
-                			Used in daily life
-                			<ul>
-                				<li>Cars (~20%)</li>
-                				<li>Your computer (even internal components)</li>
-                			</ul>
-                		</li>
-                		<li>
-                			Yuge industry
-                			<ul>
-                				<li>$373 billion / year in <em>production</em></li>
-                			</ul>
-                		</li>
-                	</ul>
-                </section>
-            </div>
-        </div>
-        <script src="reveal.js"></script>
-        <script>
-            Reveal.initialize({
+	<head>
+		<link rel="stylesheet" href="reveal.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/theme/black.min.css">
+		<link rel="stylesheet" href="paper.css">
+		<link rel="stylesheet" href="print.css" media='print'>
+		<style>
+			.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6
+			{
+				font-weight:inherit
+			}
+			ul
+			{
+				text-align:left !important;
+				display:block !important;
+			}
+			h1, h3
+			{
+				text-align: left !important;
+			}
+			.center
+			{
+				text-align: center !important;
+			}
+			.reveal .controls .navigate-left{left:-1;}
+			.viewport td,.viewport th{color:#FFF !important;}
+			#forever{ position:relative; bottom:400px; height:300px; z-index: -1; float:right;}
+			.reveal section{height:100vh}
+			#pellet{float:right; z-index:-1; width:550px;}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1 class="center">Plastic</h1>
+					<h3 class="center">Handle with care, plastic is everywhere</h3>
+					<h5 class="center">A <em>commentary</em> by Ben & Vikas</h5>
+				</section>
+				<section>
+					<h1>Introduction</h1>
+					<h3>What are <em>Plastics</em>?</h3>
+					<img id="pellet" src="pellet.jpg" alt='Pellet Plastic' />
+					<ul>
+						<li>
+							Synthetic goodness made from organic compounds
+							<ul>
+								<li>Derived from petrochemicals</li>
+								<li>Some are fully organic</li>
+							</ul>
+						</li>
+						<li>
+							Used in daily life
+							<ul>
+								<li>Cars (~20%)</li>
+								<li>Electronics (aesthetics / internal components)</li>
+								<li>Toys (for kids) (... and adults)</li>
+							</ul>
+						</li>
+						<li>
+							Yuge industry
+							<ul>
+								<li>$373 billion / year in <em>production</em></li>
+								<li>Intermediary product</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Case Study</h1>
+					<h3>The Humble Water Bottle</h3>
+					<ul>
+						<li>Water Bottles are made of Polyethylene Terephthalate (PET)</li>
+						<li>
+							Advantages
+							<ul>
+								<li>Durable & Resistant to variety of conditions (heat, cold, wear, abrasion, chemicals)</li>
+								<li>Can come in a <a style='color:red'>v</a><a style='color:orange'>a</a><a style='color:yellow'>r</a><a style='color:green'>i</a><a style='color:lightblue'>e</a><a style='color:magenta'>t</a><a style='color:cyan'>y</a> <a style='color:red'>o</a><a style='color:orange'>f</a> <a style='color:yellow'>c</a><a style='color:green'>o</a><a style='color:lightblue'>l</a><a style='color:magenta'>o</a><a style='color:red'>r</a><a style='color:cyan'>s</a></li>
+								<li>Recyclable</li>
+								<li>Supporters: Recycling companies, people who live in bad cities</li>
+							</ul>
+						</li>
+						<li>
+							Disadvanges
+							<ul>
+								<li>Shouldn’t be used multiple times</li>
+								<li>Not biodegradable</li>
+								<li>Recyclable</li>
+								<li>Monomers leftover (queue next slide)</li>
+								<li>Supporters:[educated] environmentalists, reusable bottle companies</li>
+							</ul>
+						</li>
+					</ul>
+					<img id="forever" src="forever.jpg" alt='Forever plastics' />
+				</section>
+			</div>
+		</div>
+		<script src="reveal.js"></script>
+		<script>
+			Reveal.initialize({
 				width: "90%",
 				height: "100%",
 				margin: 0,
@@ -58,6 +106,6 @@
 				transition:'zoom',
 				history:1
 			});
-        </script>
-    </body>
+		</script>
+	</body>
 </html>
