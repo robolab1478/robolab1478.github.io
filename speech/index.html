@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="reveal.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/theme/black.min.css">
+		<link rel="stylesheet" href="paper.css">
+		<link rel="stylesheet" href="print.css" media='print'>
+        <title>The Internet</title>
+		<style>
+			.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6{font-weight:inherit}
+			ul{text-align:left !important;display:block !important }
+            ul.no li{list-style-type:none}
+			h1, h3{text-align: left !important}
+			.center{text-align: center !important}
+			.right{float:right}
+			.viewport td,.viewport th{color:#FFF !important}
+			.reveal .controls .navigate-left{left:-1}
+			.reveal .controls .navigate-up, .reveal .controls .navigate-up.enabled{border-bottom-color:#500000}
+			.reveal .controls .navigate-down, .reveal .controls .navigate-down.enabled{border-top-color:#500000}
+			.reveal .controls .navigate-left, .reveal .controls .navigate-left.enabled{border-right-color:#500000}
+			.reveal .controls .navigate-right, .reveal .controls .navigate-right.enabled{border-left-color:#500000}
+			.reveal .controls .navigate-up.enabled:hover{border-bottom-color:#900000}
+			.reveal .controls .navigate-down.enabled:hover{border-top-color:#900000}
+			.reveal .controls .navigate-left.enabled:hover{border-right-color:#900000}
+			.reveal .controls .navigate-right.enabled:hover{border-left-color:#900000}
+			.reveal .progress span{background:#500000}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class='intro'>
+					<h1 class="center">You wish you knew</h1>
+					<h2 class="center">What I'm gonna say</h2>
+					<h3 class="center">Vikas Potluri</h3>
+					<h5 class="center">(Stereotypical Brown Tech Nerd)</h5>
+				</section>
+				<section>
+					<h1 class="center">Knowledge to be dropped</h1>
+					<img class="right" width="40%" src="engineer.png" alt='Engineer Definition' />
+					<ul>
+						<li>Engineering and Security Limitations</li>
+						<li>Cars<ul>
+							<li>5g</li>
+						</ul></li>
+						<li>Smart homes and cities</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2 class="center">Engineering and Security Limitations</h2>
+						<ul>
+							<li>The Internet is "yuge"</li>
+							<img class="right" src="internet.png" height="60%" alt='Internet layout' />
+							<li>Lots of Points of Failure<ul>
+								<li>Services (Password Leaks)</li>
+								<li>DNS</li>
+								<li>Resource Management (DDOS)</li>
+							</ul></li>
+						</ul>
+						<br/>
+						<blockquote class="twitter-tweet center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/aws?src=hash">#aws</a> <a href="https://twitter.com/amazon">@amazon</a> Right now at the Amazon Dashboard. <a href="https://t.co/P2vDrBeAEq">pic.twitter.com/P2vDrBeAEq</a></p>&mdash; Michael Loubier (@Hassurunous) <a href="https://twitter.com/Hassurunous/status/836667928065916928">February 28, 2017</a></blockquote>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</section>
+					<section data-background="internet.png" data-background-size="100% 100%"></section>
+				</section>
+				<section>
+					<h1>Cars</h1>
+					<ul>
+						<img class="right" src="5g.jpg" width="44%" alt='5g Speeds' />
+						<li>Autonomous<ul class="no">
+							<li>0. Human everything</li>
+							<li>1. Vehicle <em>sometimes</em> assists for <em>some</em> things</li>
+							<li>2. Vehicle does <em>some</em> tasks while human monitors</li>
+							<li>3. Vehicle does everything in <em>some</em> instances - human has to take over</li>
+							<li>4. Vehicle does everything in <em>certain</em> conditions</li>
+							<li>5. It's basically human</li>
+							<li>Source: <a href="https://one.nhtsa.gov/nhtsa/av/pdf/Federal_Automated_Vehicles_Policy.pdf" target="_blank">National Highway Traffic Safety Administration, Sept. 2016</a>
+						</ul></li>
+						<li>Network (Open Mobility Cloud)<ul><li>5g</li></ul></li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h1 class='center'>Smart Cities and Homes</h1>
+						<img src='alexa.png' height="30%"/>
+						<img src='plus.png' style="margin-bottom:6%" height="10%"/>
+						<img src='ifttt.png' height="30%"/>
+						<img src='equals.png' style="margin-bottom:6%" height="10%"/>
+						<img src='hue.png' height="30%"/>
+						<img src='and.png' style="margin-bottom:6%" height="10%"/>
+						<img src='nest.png' height="30%"/>
+						<p>Within 2 years, Amazon sold 3 million Echo units (<a href="http://files.ctctcdn.com/150f9af2201/f4d466bb-0ef8-4568-9918-b8648e6375e1.pdf" target="_blank">CIRP</a>)
+					</section>
+					<section>
+						<img src='solar_cell.jpg' height="30%" />
+						<img src='glass_road.jpg' height="30%" class="fragment" />
+					</section>
+				</section>
+				<section data-background="error.jpg"></section>
+			</div>
+		</div>
+		<script src="reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				width: "90%",
+				height: "100%",
+				margin: 0,
+				minScale: 1,
+				maxScale: 1,
+				transition:'zoom',
+				history:1
+			});
+		</script>
+	</body>
+</html>
